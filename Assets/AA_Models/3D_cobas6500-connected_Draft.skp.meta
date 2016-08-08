@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 1d4bf9b506fd2e0458b7274f741ab87b
+timeCreated: 1450008316
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000
+  assetHash:
+    serializedVersion: 2
+    Hash: b861e5a8cca6ee0a9347f88f6fbbf43e
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -2.868336, y: 1.3745991, z: -2.3508618}
+      lookAt: {x: -0.763643, y: 0.3222526, z: -0.24616867}
+      up: {x: 0.23570226, y: 0.94280905, z: 0.23570226}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: basispunkt
+    100004: basispunkt 1
+    100006: connection point
+    100008: connection point 1
+    100010: RD-3D_blac
+    100012: RD-3D_blac#1
+    100014: RD-3D_caps
+    100016: RD-3D_caps#1
+    100018: RD-3D_glas
+    100020: RD-3D_glas#1
+    100022: RD-3D_gr01
+    100024: RD-3D_gr01#1
+    100026: RD-3D_grey
+    100028: RD-3D_me01
+    100030: RD-3D_me01#1
+    100032: RD-3D_meta
+    100034: RD-3D_meta#1
+    100036: RD-3D_pink
+    100038: RD-3D_pink#1
+    100040: RD-3D_rack
+    100042: RD-3D_rack#1
+    100044: RD-3D_Roch
+    100046: RD-3D_Roch#1
+    100048: RD-3D_tube
+    100050: RD-3D_tube#1
+    100052: RD-3D_urin
+    100054: RD-3D_urin#1
+    100056: RD-3D_whit
+    100058: RD-3D_whit#1
+    100060: skp2360
+    100062: skpEBFB
+    400000: //RootNode
+    400002: basispunkt
+    400004: basispunkt 1
+    400006: connection point
+    400008: connection point 1
+    400010: RD-3D_blac
+    400012: RD-3D_blac#1
+    400014: RD-3D_caps
+    400016: RD-3D_caps#1
+    400018: RD-3D_glas
+    400020: RD-3D_glas#1
+    400022: RD-3D_gr01
+    400024: RD-3D_gr01#1
+    400026: RD-3D_grey
+    400028: RD-3D_me01
+    400030: RD-3D_me01#1
+    400032: RD-3D_meta
+    400034: RD-3D_meta#1
+    400036: RD-3D_pink
+    400038: RD-3D_pink#1
+    400040: RD-3D_rack
+    400042: RD-3D_rack#1
+    400044: RD-3D_Roch
+    400046: RD-3D_Roch#1
+    400048: RD-3D_tube
+    400050: RD-3D_tube#1
+    400052: RD-3D_urin
+    400054: RD-3D_urin#1
+    400056: RD-3D_whit
+    400058: RD-3D_whit#1
+    400060: skp2360
+    400062: skpEBFB
+    2300000: RD-3D_blac
+    2300002: RD-3D_blac#1
+    2300004: RD-3D_caps
+    2300006: RD-3D_caps#1
+    2300008: RD-3D_glas
+    2300010: RD-3D_glas#1
+    2300012: RD-3D_gr01
+    2300014: RD-3D_gr01#1
+    2300016: RD-3D_grey
+    2300018: RD-3D_me01
+    2300020: RD-3D_me01#1
+    2300022: RD-3D_meta
+    2300024: RD-3D_meta#1
+    2300026: RD-3D_pink
+    2300028: RD-3D_pink#1
+    2300030: RD-3D_rack
+    2300032: RD-3D_rack#1
+    2300034: RD-3D_Roch
+    2300036: RD-3D_Roch#1
+    2300038: RD-3D_tube
+    2300040: RD-3D_tube#1
+    2300042: RD-3D_urin
+    2300044: RD-3D_urin#1
+    2300046: RD-3D_whit
+    2300048: RD-3D_whit#1
+    3300000: RD-3D_blac
+    3300002: RD-3D_blac#1
+    3300004: RD-3D_caps
+    3300006: RD-3D_caps#1
+    3300008: RD-3D_glas
+    3300010: RD-3D_glas#1
+    3300012: RD-3D_gr01
+    3300014: RD-3D_gr01#1
+    3300016: RD-3D_grey
+    3300018: RD-3D_me01
+    3300020: RD-3D_me01#1
+    3300022: RD-3D_meta
+    3300024: RD-3D_meta#1
+    3300026: RD-3D_pink
+    3300028: RD-3D_pink#1
+    3300030: RD-3D_rack
+    3300032: RD-3D_rack#1
+    3300034: RD-3D_Roch
+    3300036: RD-3D_Roch#1
+    3300038: RD-3D_tube
+    3300040: RD-3D_tube#1
+    3300042: RD-3D_urin
+    3300044: RD-3D_urin#1
+    3300046: RD-3D_whit
+    3300048: RD-3D_whit#1
+    4300000: Mesh RD-3D_Roch
+    4300002: Mesh RD-3D_blac
+    4300004: Mesh RD-3D_caps
+    4300006: Mesh RD-3D_glas
+    4300008: Mesh RD-3D_gr01
+    4300010: Mesh RD-3D_grey
+    4300012: Mesh RD-3D_me01
+    4300014: Mesh RD-3D_meta
+    4300016: Mesh RD-3D_pink
+    4300018: Mesh RD-3D_rack
+    4300020: Mesh RD-3D_tube
+    4300022: Mesh RD-3D_urin
+    4300024: Mesh RD-3D_whit
+    4300026: Mesh RD-3D_Roch#1
+    4300028: Mesh RD-3D_blac#1
+    4300030: Mesh RD-3D_caps#1
+    4300032: Mesh RD-3D_glas#1
+    4300034: Mesh RD-3D_gr01#1
+    4300036: Mesh RD-3D_me01#1
+    4300038: Mesh RD-3D_meta#1
+    4300040: Mesh RD-3D_pink#1
+    4300042: Mesh RD-3D_rack#1
+    4300044: Mesh RD-3D_tube#1
+    4300046: Mesh RD-3D_urin#1
+    4300048: Mesh RD-3D_whit#1
+    11400000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

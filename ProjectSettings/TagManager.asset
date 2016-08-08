@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Gaze
+  - Licht
+  - Lampe
+  - Licht2
+  - Lampe2
+  - AktionenMenu
+  - HandlingZone
+  - InputDelayLampe
+  - InputDelayMenupunkt
+  - MenuPunkt
+  - UI Item Container
+  - LoadingCircle
+  - UsernameInput
+  - ErrorMessage
+  - IPAdressInput
+  - PortInput
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - AktionenMenu
+  - Zones
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

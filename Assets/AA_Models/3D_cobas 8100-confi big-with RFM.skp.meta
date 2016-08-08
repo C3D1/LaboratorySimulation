@@ -1,0 +1,1296 @@
+fileFormatVersion: 2
+guid: f21c0cc97d4740546b9247bdc88315b7
+timeCreated: 1449857522
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000f1000000f2000000f3000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000fb000000fc000000fd000000fe000000ff000000000100000101000002010000030100000401000005010000060100000701000008010000090100000a0100000b0100000c0100000d0100000e0100000f010000100100001101000012010000130100001401000015010000160100001701000018010000190100001a0100001b0100001c0100001d0100001e0100001f010000200100002101000022010000230100002401000025010000260100002701000028010000290100002a0100002b0100002c0100002d0100002e0100002f010000300100003101000032010000330100003401000035010000360100003701000038010000390100003a0100003b0100003c0100003d0100003e0100003f010000400100004101000042010000430100004401000045010000460100004701000048010000490100004a0100004b0100004c0100004d0100004e0100004f010000500100005101000052010000530100005401000055010000560100005701000058010000590100005a0100005b0100005c0100005d0100005e0100005f010000600100006101000062010000630100006401000065010000660100006701000068010000690100006a0100006b0100006c0100006d0100006e0100006f010000700100007101000072010000730100007401000075010000760100007701000078010000790100007a0100007b0100007c0100007d0100007e0100007f010000800100008101000082010000830100008401000085010000860100008701000088010000890100008a0100008b0100008c0100008d0100008e0100008f010000900100009101000092010000930100009401000095010000960100009701000098010000990100009a0100009b0100009c0100009d0100009e0100009f010000a0010000a1010000a2010000a3010000a4010000a5010000a6010000a7010000a8010000a9010000aa010000ab010000ac010000ad010000ae010000af010000b0010000b1010000b2010000b3010000b4010000b5010000b6010000b7010000b8010000b9010000ba010000bb010000bc010000bd010000be010000bf010000c0010000c1010000c2010000c3010000c4010000c5010000c6010000c7010000c8010000c9010000ca010000cb010000cc010000cd010000ce010000cf010000d0010000d1010000d2010000d3010000d4010000d5010000d6010000d7010000d8010000d9010000da010000db010000dc010000dd010000de010000df010000e0010000e1010000e2010000e3010000e4010000e5010000e6010000e7010000e8010000e9010000ea010000eb010000ec010000ed010000ee010000ef010000f0010000f1010000f2010000f3010000f4010000f5010000f6010000f7010000f8010000f9010000fa010000fb010000fc010000fd010000fe010000ff01000000020000010200000202000003020000040200000502000006020000070200000802000009020000
+  assetHash:
+    serializedVersion: 2
+    Hash: d9349c58c5b0d1860e48bfd3718ce9ba
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -1.6609404, y: 3.5868962, z: -5.1513753}
+      lookAt: {x: 4.043932, y: 0.7344602, z: 0.5534968}
+      up: {x: 0.23570226, y: 0.94280905, z: 0.23570226}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: '#1'
+    100002: '#1 1'
+    100004: '#1 10'
+    100006: '#1 11'
+    100008: '#1 2'
+    100010: '#1 3'
+    100012: '#1 4'
+    100014: '#1 5'
+    100016: '#1 6'
+    100018: '#1 7'
+    100020: '#1 8'
+    100022: '#1 9'
+    100024: //RootNode
+    100026: 8100
+    100028: a
+    100030: ACU#2
+    100032: ACU#2 1
+    100034: AOB
+    100036: AQM
+    100038: b
+    100040: basispunkt
+    100042: basispunkt 1
+    100044: BCL
+    100046: BCL 1
+    100048: c#2
+    100050: connection point
+    100052: connection point 1
+    100054: DSP
+    100056: Gruppe#1
+    100058: Gruppe#1 1
+    100060: HITACHI
+    100062: IPB
+    100064: o
+    100066: OBS
+    100068: R
+    100070: RD-3D_blac
+    100072: RD-3D_blac 1
+    100074: RD-3D_blac#1
+    100076: RD-3D_blac#2
+    100078: RD-3D_blac#3
+    100080: RD-3D_blac#4
+    100082: RD-3D_blac#4 1
+    100084: RD-3D_blac#5
+    100086: RD-3D_blac#6
+    100088: RD-3D_blac#6 1
+    100090: RD-3D_blac#7
+    100092: RD-3D_blac#8
+    100094: RD-3D_butt
+    100096: RD-3D_butt 1
+    100098: RD-3D_butt#1
+    100100: RD-3D_butt#2
+    100102: RD-3D_butt#3
+    100104: RD-3D_butt#4
+    100106: RD-3D_butt#4 1
+    100108: RD-3D_butt#5
+    100110: RD-3D_butt#6
+    100112: RD-3D_butt#6 1
+    100114: RD-3D_butt#7
+    100116: RD-3D_butt#8
+    100118: RD-3D_dark
+    100120: RD-3D_dark#1
+    100122: RD-3D_dark#1 1
+    100124: RD-3D_dark#2
+    100126: RD-3D_dark#3
+    100128: RD-3D_dark#4
+    100130: RD-3D_dark#5
+    100132: RD-3D_dark#5 1
+    100134: RD-3D_dark#6
+    100136: RD-3D_dark#7
+    100138: RD-3D_dark#7 1
+    100140: RD-3D_dark#8
+    100142: RD-3D_dark#9
+    100144: RD-3D_feet
+    100146: RD-3D_feet 1
+    100148: RD-3D_feet#1
+    100150: RD-3D_feet#2
+    100152: RD-3D_feet#3
+    100154: RD-3D_feet#4
+    100156: RD-3D_feet#4 1
+    100158: RD-3D_feet#5
+    100160: RD-3D_feet#6
+    100162: RD-3D_feet#6 1
+    100164: RD-3D_feet#7
+    100166: RD-3D_feet#8
+    100168: RD-3D_gl01
+    100170: RD-3D_glas
+    100172: RD-3D_glas#1
+    100174: RD-3D_glas#1 1
+    100176: RD-3D_glas#2
+    100178: RD-3D_glas#3
+    100180: RD-3D_glas#4
+    100182: RD-3D_glas#5
+    100184: RD-3D_glas#5 1
+    100186: RD-3D_glas#6
+    100188: RD-3D_glas#7
+    100190: RD-3D_glas#7 1
+    100192: RD-3D_glas#8
+    100194: RD-3D_glas#9
+    100196: RD-3D_gr01
+    100198: RD-3D_gr01#1
+    100200: RD-3D_gr01#2
+    100202: RD-3D_gr01#3
+    100204: RD-3D_gr01#3 1
+    100206: RD-3D_gr01#4
+    100208: RD-3D_gr02
+    100210: RD-3D_gr02 1
+    100212: RD-3D_gr02#1
+    100214: RD-3D_gr02#2
+    100216: RD-3D_gr02#3
+    100218: RD-3D_gr02#4
+    100220: RD-3D_gr02#4 1
+    100222: RD-3D_gr02#5
+    100224: RD-3D_gr02#6
+    100226: RD-3D_gr02#6 1
+    100228: RD-3D_gr02#7
+    100230: RD-3D_gr02#8
+    100232: RD-3D_grey
+    100234: RD-3D_grey#1
+    100236: RD-3D_grey#1 1
+    100238: RD-3D_grey#2
+    100240: RD-3D_grey#3
+    100242: RD-3D_grey#3 1
+    100244: RD-3D_grey#4
+    100246: RD-3D_ha01
+    100248: RD-3D_ha01 1
+    100250: RD-3D_ha01#1
+    100252: RD-3D_ha01#2
+    100254: RD-3D_ha01#3
+    100256: RD-3D_ha01#3 1
+    100258: RD-3D_ha01#4
+    100260: RD-3D_ha01#5
+    100262: RD-3D_ha01#5 1
+    100264: RD-3D_ha01#6
+    100266: RD-3D_ha01#7
+    100268: RD-3D_hand
+    100270: RD-3D_hand 1
+    100272: RD-3D_hand#1
+    100274: RD-3D_hand#2
+    100276: RD-3D_hand#3
+    100278: RD-3D_hand#4
+    100280: RD-3D_hand#4 1
+    100282: RD-3D_hand#5
+    100284: RD-3D_hand#6
+    100286: RD-3D_hand#6 1
+    100288: RD-3D_hand#7
+    100290: RD-3D_hand#8
+    100292: RD-3D_me01
+    100294: RD-3D_me01#1
+    100296: RD-3D_me01#1 1
+    100298: RD-3D_me01#10
+    100300: RD-3D_me01#2
+    100302: RD-3D_me01#3
+    100304: RD-3D_me01#4
+    100306: RD-3D_me01#5
+    100308: RD-3D_me01#5 1
+    100310: RD-3D_me01#6
+    100312: RD-3D_me01#7
+    100314: RD-3D_me01#7 1
+    100316: RD-3D_me01#8
+    100318: RD-3D_me01#9
+    100320: RD-3D_meta
+    100322: RD-3D_meta#1
+    100324: RD-3D_meta#1 1
+    100326: RD-3D_meta#2
+    100328: RD-3D_meta#3
+    100330: RD-3D_meta#4
+    100332: RD-3D_meta#5
+    100334: RD-3D_meta#5 1
+    100336: RD-3D_meta#6
+    100338: RD-3D_meta#7
+    100340: RD-3D_meta#7 1
+    100342: RD-3D_meta#8
+    100344: RD-3D_meta#9
+    100346: RD-3D_pink
+    100348: RD-3D_pink#1
+    100350: RD-3D_pink#2
+    100352: RD-3D_pink#3
+    100354: RD-3D_pink#3 1
+    100356: RD-3D_pink#4
+    100358: RD-3D_pink#5
+    100360: RD-3D_wh01
+    100362: RD-3D_wh01 1
+    100364: RD-3D_wh01#1
+    100366: RD-3D_wh01#2
+    100368: RD-3D_wh01#3
+    100370: RD-3D_wh01#4
+    100372: RD-3D_wh01#4 1
+    100374: RD-3D_wh01#5
+    100376: RD-3D_wh01#6
+    100378: RD-3D_wh01#6 1
+    100380: RD-3D_wh01#7
+    100382: RD-3D_wh01#8
+    100384: RD-3D_wh01#9
+    100386: RD-3D_whit
+    100388: RD-3D_whit 1
+    100390: RD-3D_whit#1
+    100392: RD-3D_whit#1 1
+    100394: RD-3D_whit#2
+    100396: RD-3D_whit#3
+    100398: RD-3D_whit#4
+    100400: RD-3D_whit#5
+    100402: RD-3D_whit#5 1
+    100404: RD-3D_whit#6
+    100406: RD-3D_whit#7
+    100408: RD-3D_whit#7 1
+    100410: RD-3D_whit#8
+    100412: RD-3D_whit#9
+    100414: RFM
+    100416: RSF
+    100418: RSF 1
+    100420: s
+    100422: S.STOP
+    100424: S.STOP 1
+    100426: S.STOP 2
+    100428: S.STOP 3
+    100430: S.STOP 4
+    100432: S.STOP 5
+    100434: S.STOP 6
+    100436: S.STOP 7
+    100438: S.STOP#1
+    100440: S.STOP#2
+    100442: S.STOP#3
+    100444: S.STOP#3 1
+    100446: skp187
+    100448: skp187 1
+    100450: skp3DF1
+    100452: skp3DF1 1
+    100454: skp5D11
+    100456: skp5F28
+    100458: skp8D3A
+    100460: skp8D3A#1
+    100462: skp8D3A#1 1
+    100464: skp8F2F
+    100466: skp8F2F 1
+    100468: skpB731
+    100470: skpB731 1
+    100472: skpB731 10
+    100474: skpB731 11
+    100476: skpB731 2
+    100478: skpB731 3
+    100480: skpB731 4
+    100482: skpB731 5
+    100484: skpB731 6
+    100486: skpB731 7
+    100488: skpB731 8
+    100490: skpB731 9
+    100492: skpB7BD
+    100494: skpBBE0
+    100496: skpBBE0#1
+    100498: skpBBE0#2
+    100500: skpBDA6
+    100502: skpD936
+    100504: skpE01B
+    100506: skpE650
+    100508: START
+    100510: START 1
+    100512: START 10
+    100514: START 11
+    100516: START 2
+    100518: START 3
+    100520: START 4
+    100522: START 5
+    100524: START 6
+    100526: START 7
+    100528: START 8
+    100530: START 9
+    100532: STOP
+    100534: STOP 1
+    100536: STOP 2
+    100538: STOP 3
+    100540: STOP 4
+    100542: STOP 5
+    100544: STOP 6
+    100546: STOP 7
+    100548: STOP#1
+    100550: STOP#2
+    100552: STOP#3
+    100554: STOP#3 1
+    100556: "\xAE#4"
+    400000: '#1'
+    400002: '#1 1'
+    400004: '#1 10'
+    400006: '#1 11'
+    400008: '#1 2'
+    400010: '#1 3'
+    400012: '#1 4'
+    400014: '#1 5'
+    400016: '#1 6'
+    400018: '#1 7'
+    400020: '#1 8'
+    400022: '#1 9'
+    400024: //RootNode
+    400026: 8100
+    400028: a
+    400030: ACU#2
+    400032: ACU#2 1
+    400034: AOB
+    400036: AQM
+    400038: b
+    400040: basispunkt
+    400042: basispunkt 1
+    400044: BCL
+    400046: BCL 1
+    400048: c#2
+    400050: connection point
+    400052: connection point 1
+    400054: DSP
+    400056: Gruppe#1
+    400058: Gruppe#1 1
+    400060: HITACHI
+    400062: IPB
+    400064: o
+    400066: OBS
+    400068: R
+    400070: RD-3D_blac
+    400072: RD-3D_blac 1
+    400074: RD-3D_blac#1
+    400076: RD-3D_blac#2
+    400078: RD-3D_blac#3
+    400080: RD-3D_blac#4
+    400082: RD-3D_blac#4 1
+    400084: RD-3D_blac#5
+    400086: RD-3D_blac#6
+    400088: RD-3D_blac#6 1
+    400090: RD-3D_blac#7
+    400092: RD-3D_blac#8
+    400094: RD-3D_butt
+    400096: RD-3D_butt 1
+    400098: RD-3D_butt#1
+    400100: RD-3D_butt#2
+    400102: RD-3D_butt#3
+    400104: RD-3D_butt#4
+    400106: RD-3D_butt#4 1
+    400108: RD-3D_butt#5
+    400110: RD-3D_butt#6
+    400112: RD-3D_butt#6 1
+    400114: RD-3D_butt#7
+    400116: RD-3D_butt#8
+    400118: RD-3D_dark
+    400120: RD-3D_dark#1
+    400122: RD-3D_dark#1 1
+    400124: RD-3D_dark#2
+    400126: RD-3D_dark#3
+    400128: RD-3D_dark#4
+    400130: RD-3D_dark#5
+    400132: RD-3D_dark#5 1
+    400134: RD-3D_dark#6
+    400136: RD-3D_dark#7
+    400138: RD-3D_dark#7 1
+    400140: RD-3D_dark#8
+    400142: RD-3D_dark#9
+    400144: RD-3D_feet
+    400146: RD-3D_feet 1
+    400148: RD-3D_feet#1
+    400150: RD-3D_feet#2
+    400152: RD-3D_feet#3
+    400154: RD-3D_feet#4
+    400156: RD-3D_feet#4 1
+    400158: RD-3D_feet#5
+    400160: RD-3D_feet#6
+    400162: RD-3D_feet#6 1
+    400164: RD-3D_feet#7
+    400166: RD-3D_feet#8
+    400168: RD-3D_gl01
+    400170: RD-3D_glas
+    400172: RD-3D_glas#1
+    400174: RD-3D_glas#1 1
+    400176: RD-3D_glas#2
+    400178: RD-3D_glas#3
+    400180: RD-3D_glas#4
+    400182: RD-3D_glas#5
+    400184: RD-3D_glas#5 1
+    400186: RD-3D_glas#6
+    400188: RD-3D_glas#7
+    400190: RD-3D_glas#7 1
+    400192: RD-3D_glas#8
+    400194: RD-3D_glas#9
+    400196: RD-3D_gr01
+    400198: RD-3D_gr01#1
+    400200: RD-3D_gr01#2
+    400202: RD-3D_gr01#3
+    400204: RD-3D_gr01#3 1
+    400206: RD-3D_gr01#4
+    400208: RD-3D_gr02
+    400210: RD-3D_gr02 1
+    400212: RD-3D_gr02#1
+    400214: RD-3D_gr02#2
+    400216: RD-3D_gr02#3
+    400218: RD-3D_gr02#4
+    400220: RD-3D_gr02#4 1
+    400222: RD-3D_gr02#5
+    400224: RD-3D_gr02#6
+    400226: RD-3D_gr02#6 1
+    400228: RD-3D_gr02#7
+    400230: RD-3D_gr02#8
+    400232: RD-3D_grey
+    400234: RD-3D_grey#1
+    400236: RD-3D_grey#1 1
+    400238: RD-3D_grey#2
+    400240: RD-3D_grey#3
+    400242: RD-3D_grey#3 1
+    400244: RD-3D_grey#4
+    400246: RD-3D_ha01
+    400248: RD-3D_ha01 1
+    400250: RD-3D_ha01#1
+    400252: RD-3D_ha01#2
+    400254: RD-3D_ha01#3
+    400256: RD-3D_ha01#3 1
+    400258: RD-3D_ha01#4
+    400260: RD-3D_ha01#5
+    400262: RD-3D_ha01#5 1
+    400264: RD-3D_ha01#6
+    400266: RD-3D_ha01#7
+    400268: RD-3D_hand
+    400270: RD-3D_hand 1
+    400272: RD-3D_hand#1
+    400274: RD-3D_hand#2
+    400276: RD-3D_hand#3
+    400278: RD-3D_hand#4
+    400280: RD-3D_hand#4 1
+    400282: RD-3D_hand#5
+    400284: RD-3D_hand#6
+    400286: RD-3D_hand#6 1
+    400288: RD-3D_hand#7
+    400290: RD-3D_hand#8
+    400292: RD-3D_me01
+    400294: RD-3D_me01#1
+    400296: RD-3D_me01#1 1
+    400298: RD-3D_me01#10
+    400300: RD-3D_me01#2
+    400302: RD-3D_me01#3
+    400304: RD-3D_me01#4
+    400306: RD-3D_me01#5
+    400308: RD-3D_me01#5 1
+    400310: RD-3D_me01#6
+    400312: RD-3D_me01#7
+    400314: RD-3D_me01#7 1
+    400316: RD-3D_me01#8
+    400318: RD-3D_me01#9
+    400320: RD-3D_meta
+    400322: RD-3D_meta#1
+    400324: RD-3D_meta#1 1
+    400326: RD-3D_meta#2
+    400328: RD-3D_meta#3
+    400330: RD-3D_meta#4
+    400332: RD-3D_meta#5
+    400334: RD-3D_meta#5 1
+    400336: RD-3D_meta#6
+    400338: RD-3D_meta#7
+    400340: RD-3D_meta#7 1
+    400342: RD-3D_meta#8
+    400344: RD-3D_meta#9
+    400346: RD-3D_pink
+    400348: RD-3D_pink#1
+    400350: RD-3D_pink#2
+    400352: RD-3D_pink#3
+    400354: RD-3D_pink#3 1
+    400356: RD-3D_pink#4
+    400358: RD-3D_pink#5
+    400360: RD-3D_wh01
+    400362: RD-3D_wh01 1
+    400364: RD-3D_wh01#1
+    400366: RD-3D_wh01#2
+    400368: RD-3D_wh01#3
+    400370: RD-3D_wh01#4
+    400372: RD-3D_wh01#4 1
+    400374: RD-3D_wh01#5
+    400376: RD-3D_wh01#6
+    400378: RD-3D_wh01#6 1
+    400380: RD-3D_wh01#7
+    400382: RD-3D_wh01#8
+    400384: RD-3D_wh01#9
+    400386: RD-3D_whit
+    400388: RD-3D_whit 1
+    400390: RD-3D_whit#1
+    400392: RD-3D_whit#1 1
+    400394: RD-3D_whit#2
+    400396: RD-3D_whit#3
+    400398: RD-3D_whit#4
+    400400: RD-3D_whit#5
+    400402: RD-3D_whit#5 1
+    400404: RD-3D_whit#6
+    400406: RD-3D_whit#7
+    400408: RD-3D_whit#7 1
+    400410: RD-3D_whit#8
+    400412: RD-3D_whit#9
+    400414: RFM
+    400416: RSF
+    400418: RSF 1
+    400420: s
+    400422: S.STOP
+    400424: S.STOP 1
+    400426: S.STOP 2
+    400428: S.STOP 3
+    400430: S.STOP 4
+    400432: S.STOP 5
+    400434: S.STOP 6
+    400436: S.STOP 7
+    400438: S.STOP#1
+    400440: S.STOP#2
+    400442: S.STOP#3
+    400444: S.STOP#3 1
+    400446: skp187
+    400448: skp187 1
+    400450: skp3DF1
+    400452: skp3DF1 1
+    400454: skp5D11
+    400456: skp5F28
+    400458: skp8D3A
+    400460: skp8D3A#1
+    400462: skp8D3A#1 1
+    400464: skp8F2F
+    400466: skp8F2F 1
+    400468: skpB731
+    400470: skpB731 1
+    400472: skpB731 10
+    400474: skpB731 11
+    400476: skpB731 2
+    400478: skpB731 3
+    400480: skpB731 4
+    400482: skpB731 5
+    400484: skpB731 6
+    400486: skpB731 7
+    400488: skpB731 8
+    400490: skpB731 9
+    400492: skpB7BD
+    400494: skpBBE0
+    400496: skpBBE0#1
+    400498: skpBBE0#2
+    400500: skpBDA6
+    400502: skpD936
+    400504: skpE01B
+    400506: skpE650
+    400508: START
+    400510: START 1
+    400512: START 10
+    400514: START 11
+    400516: START 2
+    400518: START 3
+    400520: START 4
+    400522: START 5
+    400524: START 6
+    400526: START 7
+    400528: START 8
+    400530: START 9
+    400532: STOP
+    400534: STOP 1
+    400536: STOP 2
+    400538: STOP 3
+    400540: STOP 4
+    400542: STOP 5
+    400544: STOP 6
+    400546: STOP 7
+    400548: STOP#1
+    400550: STOP#2
+    400552: STOP#3
+    400554: STOP#3 1
+    400556: "\xAE#4"
+    2300000: '#1'
+    2300002: '#1 1'
+    2300004: '#1 10'
+    2300006: '#1 11'
+    2300008: '#1 2'
+    2300010: '#1 3'
+    2300012: '#1 4'
+    2300014: '#1 5'
+    2300016: '#1 6'
+    2300018: '#1 7'
+    2300020: '#1 8'
+    2300022: '#1 9'
+    2300024: 8100
+    2300026: a
+    2300028: ACU#2
+    2300030: ACU#2 1
+    2300032: AOB
+    2300034: AQM
+    2300036: b
+    2300038: BCL
+    2300040: BCL 1
+    2300042: c#2
+    2300044: DSP
+    2300046: Gruppe#1
+    2300048: Gruppe#1 1
+    2300050: HITACHI
+    2300052: IPB
+    2300054: o
+    2300056: OBS
+    2300058: R
+    2300060: RD-3D_blac
+    2300062: RD-3D_blac 1
+    2300064: RD-3D_blac#1
+    2300066: RD-3D_blac#2
+    2300068: RD-3D_blac#3
+    2300070: RD-3D_blac#4
+    2300072: RD-3D_blac#4 1
+    2300074: RD-3D_blac#5
+    2300076: RD-3D_blac#6
+    2300078: RD-3D_blac#6 1
+    2300080: RD-3D_blac#7
+    2300082: RD-3D_blac#8
+    2300084: RD-3D_butt
+    2300086: RD-3D_butt 1
+    2300088: RD-3D_butt#1
+    2300090: RD-3D_butt#2
+    2300092: RD-3D_butt#3
+    2300094: RD-3D_butt#4
+    2300096: RD-3D_butt#4 1
+    2300098: RD-3D_butt#5
+    2300100: RD-3D_butt#6
+    2300102: RD-3D_butt#6 1
+    2300104: RD-3D_butt#7
+    2300106: RD-3D_butt#8
+    2300108: RD-3D_dark
+    2300110: RD-3D_dark#1
+    2300112: RD-3D_dark#1 1
+    2300114: RD-3D_dark#2
+    2300116: RD-3D_dark#3
+    2300118: RD-3D_dark#4
+    2300120: RD-3D_dark#5
+    2300122: RD-3D_dark#5 1
+    2300124: RD-3D_dark#6
+    2300126: RD-3D_dark#7
+    2300128: RD-3D_dark#7 1
+    2300130: RD-3D_dark#8
+    2300132: RD-3D_dark#9
+    2300134: RD-3D_feet
+    2300136: RD-3D_feet 1
+    2300138: RD-3D_feet#1
+    2300140: RD-3D_feet#2
+    2300142: RD-3D_feet#3
+    2300144: RD-3D_feet#4
+    2300146: RD-3D_feet#4 1
+    2300148: RD-3D_feet#5
+    2300150: RD-3D_feet#6
+    2300152: RD-3D_feet#6 1
+    2300154: RD-3D_feet#7
+    2300156: RD-3D_feet#8
+    2300158: RD-3D_gl01
+    2300160: RD-3D_glas
+    2300162: RD-3D_glas#1
+    2300164: RD-3D_glas#1 1
+    2300166: RD-3D_glas#2
+    2300168: RD-3D_glas#3
+    2300170: RD-3D_glas#4
+    2300172: RD-3D_glas#5
+    2300174: RD-3D_glas#5 1
+    2300176: RD-3D_glas#6
+    2300178: RD-3D_glas#7
+    2300180: RD-3D_glas#7 1
+    2300182: RD-3D_glas#8
+    2300184: RD-3D_glas#9
+    2300186: RD-3D_gr01
+    2300188: RD-3D_gr01#1
+    2300190: RD-3D_gr01#2
+    2300192: RD-3D_gr01#3
+    2300194: RD-3D_gr01#3 1
+    2300196: RD-3D_gr01#4
+    2300198: RD-3D_gr02
+    2300200: RD-3D_gr02 1
+    2300202: RD-3D_gr02#1
+    2300204: RD-3D_gr02#2
+    2300206: RD-3D_gr02#3
+    2300208: RD-3D_gr02#4
+    2300210: RD-3D_gr02#4 1
+    2300212: RD-3D_gr02#5
+    2300214: RD-3D_gr02#6
+    2300216: RD-3D_gr02#6 1
+    2300218: RD-3D_gr02#7
+    2300220: RD-3D_gr02#8
+    2300222: RD-3D_grey
+    2300224: RD-3D_grey#1
+    2300226: RD-3D_grey#1 1
+    2300228: RD-3D_grey#2
+    2300230: RD-3D_grey#3
+    2300232: RD-3D_grey#3 1
+    2300234: RD-3D_grey#4
+    2300236: RD-3D_ha01
+    2300238: RD-3D_ha01 1
+    2300240: RD-3D_ha01#1
+    2300242: RD-3D_ha01#2
+    2300244: RD-3D_ha01#3
+    2300246: RD-3D_ha01#3 1
+    2300248: RD-3D_ha01#4
+    2300250: RD-3D_ha01#5
+    2300252: RD-3D_ha01#5 1
+    2300254: RD-3D_ha01#6
+    2300256: RD-3D_ha01#7
+    2300258: RD-3D_hand
+    2300260: RD-3D_hand 1
+    2300262: RD-3D_hand#1
+    2300264: RD-3D_hand#2
+    2300266: RD-3D_hand#3
+    2300268: RD-3D_hand#4
+    2300270: RD-3D_hand#4 1
+    2300272: RD-3D_hand#5
+    2300274: RD-3D_hand#6
+    2300276: RD-3D_hand#6 1
+    2300278: RD-3D_hand#7
+    2300280: RD-3D_hand#8
+    2300282: RD-3D_me01
+    2300284: RD-3D_me01#1
+    2300286: RD-3D_me01#1 1
+    2300288: RD-3D_me01#10
+    2300290: RD-3D_me01#2
+    2300292: RD-3D_me01#3
+    2300294: RD-3D_me01#4
+    2300296: RD-3D_me01#5
+    2300298: RD-3D_me01#5 1
+    2300300: RD-3D_me01#6
+    2300302: RD-3D_me01#7
+    2300304: RD-3D_me01#7 1
+    2300306: RD-3D_me01#8
+    2300308: RD-3D_me01#9
+    2300310: RD-3D_meta
+    2300312: RD-3D_meta#1
+    2300314: RD-3D_meta#1 1
+    2300316: RD-3D_meta#2
+    2300318: RD-3D_meta#3
+    2300320: RD-3D_meta#4
+    2300322: RD-3D_meta#5
+    2300324: RD-3D_meta#5 1
+    2300326: RD-3D_meta#6
+    2300328: RD-3D_meta#7
+    2300330: RD-3D_meta#7 1
+    2300332: RD-3D_meta#8
+    2300334: RD-3D_meta#9
+    2300336: RD-3D_pink
+    2300338: RD-3D_pink#1
+    2300340: RD-3D_pink#2
+    2300342: RD-3D_pink#3
+    2300344: RD-3D_pink#3 1
+    2300346: RD-3D_pink#4
+    2300348: RD-3D_pink#5
+    2300350: RD-3D_wh01
+    2300352: RD-3D_wh01 1
+    2300354: RD-3D_wh01#1
+    2300356: RD-3D_wh01#2
+    2300358: RD-3D_wh01#3
+    2300360: RD-3D_wh01#4
+    2300362: RD-3D_wh01#4 1
+    2300364: RD-3D_wh01#5
+    2300366: RD-3D_wh01#6
+    2300368: RD-3D_wh01#6 1
+    2300370: RD-3D_wh01#7
+    2300372: RD-3D_wh01#8
+    2300374: RD-3D_wh01#9
+    2300376: RD-3D_whit
+    2300378: RD-3D_whit 1
+    2300380: RD-3D_whit#1
+    2300382: RD-3D_whit#1 1
+    2300384: RD-3D_whit#2
+    2300386: RD-3D_whit#3
+    2300388: RD-3D_whit#4
+    2300390: RD-3D_whit#5
+    2300392: RD-3D_whit#5 1
+    2300394: RD-3D_whit#6
+    2300396: RD-3D_whit#7
+    2300398: RD-3D_whit#7 1
+    2300400: RD-3D_whit#8
+    2300402: RD-3D_whit#9
+    2300404: RFM
+    2300406: RSF
+    2300408: RSF 1
+    2300410: s
+    2300412: S.STOP
+    2300414: S.STOP 1
+    2300416: S.STOP 2
+    2300418: S.STOP 3
+    2300420: S.STOP 4
+    2300422: S.STOP 5
+    2300424: S.STOP 6
+    2300426: S.STOP 7
+    2300428: S.STOP#1
+    2300430: S.STOP#2
+    2300432: S.STOP#3
+    2300434: S.STOP#3 1
+    2300436: START
+    2300438: START 1
+    2300440: START 10
+    2300442: START 11
+    2300444: START 2
+    2300446: START 3
+    2300448: START 4
+    2300450: START 5
+    2300452: START 6
+    2300454: START 7
+    2300456: START 8
+    2300458: START 9
+    2300460: STOP
+    2300462: STOP 1
+    2300464: STOP 2
+    2300466: STOP 3
+    2300468: STOP 4
+    2300470: STOP 5
+    2300472: STOP 6
+    2300474: STOP 7
+    2300476: STOP#1
+    2300478: STOP#2
+    2300480: STOP#3
+    2300482: STOP#3 1
+    2300484: "\xAE#4"
+    3300000: '#1'
+    3300002: '#1 1'
+    3300004: '#1 10'
+    3300006: '#1 11'
+    3300008: '#1 2'
+    3300010: '#1 3'
+    3300012: '#1 4'
+    3300014: '#1 5'
+    3300016: '#1 6'
+    3300018: '#1 7'
+    3300020: '#1 8'
+    3300022: '#1 9'
+    3300024: 8100
+    3300026: a
+    3300028: ACU#2
+    3300030: ACU#2 1
+    3300032: AOB
+    3300034: AQM
+    3300036: b
+    3300038: BCL
+    3300040: BCL 1
+    3300042: c#2
+    3300044: DSP
+    3300046: Gruppe#1
+    3300048: Gruppe#1 1
+    3300050: HITACHI
+    3300052: IPB
+    3300054: o
+    3300056: OBS
+    3300058: R
+    3300060: RD-3D_blac
+    3300062: RD-3D_blac 1
+    3300064: RD-3D_blac#1
+    3300066: RD-3D_blac#2
+    3300068: RD-3D_blac#3
+    3300070: RD-3D_blac#4
+    3300072: RD-3D_blac#4 1
+    3300074: RD-3D_blac#5
+    3300076: RD-3D_blac#6
+    3300078: RD-3D_blac#6 1
+    3300080: RD-3D_blac#7
+    3300082: RD-3D_blac#8
+    3300084: RD-3D_butt
+    3300086: RD-3D_butt 1
+    3300088: RD-3D_butt#1
+    3300090: RD-3D_butt#2
+    3300092: RD-3D_butt#3
+    3300094: RD-3D_butt#4
+    3300096: RD-3D_butt#4 1
+    3300098: RD-3D_butt#5
+    3300100: RD-3D_butt#6
+    3300102: RD-3D_butt#6 1
+    3300104: RD-3D_butt#7
+    3300106: RD-3D_butt#8
+    3300108: RD-3D_dark
+    3300110: RD-3D_dark#1
+    3300112: RD-3D_dark#1 1
+    3300114: RD-3D_dark#2
+    3300116: RD-3D_dark#3
+    3300118: RD-3D_dark#4
+    3300120: RD-3D_dark#5
+    3300122: RD-3D_dark#5 1
+    3300124: RD-3D_dark#6
+    3300126: RD-3D_dark#7
+    3300128: RD-3D_dark#7 1
+    3300130: RD-3D_dark#8
+    3300132: RD-3D_dark#9
+    3300134: RD-3D_feet
+    3300136: RD-3D_feet 1
+    3300138: RD-3D_feet#1
+    3300140: RD-3D_feet#2
+    3300142: RD-3D_feet#3
+    3300144: RD-3D_feet#4
+    3300146: RD-3D_feet#4 1
+    3300148: RD-3D_feet#5
+    3300150: RD-3D_feet#6
+    3300152: RD-3D_feet#6 1
+    3300154: RD-3D_feet#7
+    3300156: RD-3D_feet#8
+    3300158: RD-3D_gl01
+    3300160: RD-3D_glas
+    3300162: RD-3D_glas#1
+    3300164: RD-3D_glas#1 1
+    3300166: RD-3D_glas#2
+    3300168: RD-3D_glas#3
+    3300170: RD-3D_glas#4
+    3300172: RD-3D_glas#5
+    3300174: RD-3D_glas#5 1
+    3300176: RD-3D_glas#6
+    3300178: RD-3D_glas#7
+    3300180: RD-3D_glas#7 1
+    3300182: RD-3D_glas#8
+    3300184: RD-3D_glas#9
+    3300186: RD-3D_gr01
+    3300188: RD-3D_gr01#1
+    3300190: RD-3D_gr01#2
+    3300192: RD-3D_gr01#3
+    3300194: RD-3D_gr01#3 1
+    3300196: RD-3D_gr01#4
+    3300198: RD-3D_gr02
+    3300200: RD-3D_gr02 1
+    3300202: RD-3D_gr02#1
+    3300204: RD-3D_gr02#2
+    3300206: RD-3D_gr02#3
+    3300208: RD-3D_gr02#4
+    3300210: RD-3D_gr02#4 1
+    3300212: RD-3D_gr02#5
+    3300214: RD-3D_gr02#6
+    3300216: RD-3D_gr02#6 1
+    3300218: RD-3D_gr02#7
+    3300220: RD-3D_gr02#8
+    3300222: RD-3D_grey
+    3300224: RD-3D_grey#1
+    3300226: RD-3D_grey#1 1
+    3300228: RD-3D_grey#2
+    3300230: RD-3D_grey#3
+    3300232: RD-3D_grey#3 1
+    3300234: RD-3D_grey#4
+    3300236: RD-3D_ha01
+    3300238: RD-3D_ha01 1
+    3300240: RD-3D_ha01#1
+    3300242: RD-3D_ha01#2
+    3300244: RD-3D_ha01#3
+    3300246: RD-3D_ha01#3 1
+    3300248: RD-3D_ha01#4
+    3300250: RD-3D_ha01#5
+    3300252: RD-3D_ha01#5 1
+    3300254: RD-3D_ha01#6
+    3300256: RD-3D_ha01#7
+    3300258: RD-3D_hand
+    3300260: RD-3D_hand 1
+    3300262: RD-3D_hand#1
+    3300264: RD-3D_hand#2
+    3300266: RD-3D_hand#3
+    3300268: RD-3D_hand#4
+    3300270: RD-3D_hand#4 1
+    3300272: RD-3D_hand#5
+    3300274: RD-3D_hand#6
+    3300276: RD-3D_hand#6 1
+    3300278: RD-3D_hand#7
+    3300280: RD-3D_hand#8
+    3300282: RD-3D_me01
+    3300284: RD-3D_me01#1
+    3300286: RD-3D_me01#1 1
+    3300288: RD-3D_me01#10
+    3300290: RD-3D_me01#2
+    3300292: RD-3D_me01#3
+    3300294: RD-3D_me01#4
+    3300296: RD-3D_me01#5
+    3300298: RD-3D_me01#5 1
+    3300300: RD-3D_me01#6
+    3300302: RD-3D_me01#7
+    3300304: RD-3D_me01#7 1
+    3300306: RD-3D_me01#8
+    3300308: RD-3D_me01#9
+    3300310: RD-3D_meta
+    3300312: RD-3D_meta#1
+    3300314: RD-3D_meta#1 1
+    3300316: RD-3D_meta#2
+    3300318: RD-3D_meta#3
+    3300320: RD-3D_meta#4
+    3300322: RD-3D_meta#5
+    3300324: RD-3D_meta#5 1
+    3300326: RD-3D_meta#6
+    3300328: RD-3D_meta#7
+    3300330: RD-3D_meta#7 1
+    3300332: RD-3D_meta#8
+    3300334: RD-3D_meta#9
+    3300336: RD-3D_pink
+    3300338: RD-3D_pink#1
+    3300340: RD-3D_pink#2
+    3300342: RD-3D_pink#3
+    3300344: RD-3D_pink#3 1
+    3300346: RD-3D_pink#4
+    3300348: RD-3D_pink#5
+    3300350: RD-3D_wh01
+    3300352: RD-3D_wh01 1
+    3300354: RD-3D_wh01#1
+    3300356: RD-3D_wh01#2
+    3300358: RD-3D_wh01#3
+    3300360: RD-3D_wh01#4
+    3300362: RD-3D_wh01#4 1
+    3300364: RD-3D_wh01#5
+    3300366: RD-3D_wh01#6
+    3300368: RD-3D_wh01#6 1
+    3300370: RD-3D_wh01#7
+    3300372: RD-3D_wh01#8
+    3300374: RD-3D_wh01#9
+    3300376: RD-3D_whit
+    3300378: RD-3D_whit 1
+    3300380: RD-3D_whit#1
+    3300382: RD-3D_whit#1 1
+    3300384: RD-3D_whit#2
+    3300386: RD-3D_whit#3
+    3300388: RD-3D_whit#4
+    3300390: RD-3D_whit#5
+    3300392: RD-3D_whit#5 1
+    3300394: RD-3D_whit#6
+    3300396: RD-3D_whit#7
+    3300398: RD-3D_whit#7 1
+    3300400: RD-3D_whit#8
+    3300402: RD-3D_whit#9
+    3300404: RFM
+    3300406: RSF
+    3300408: RSF 1
+    3300410: s
+    3300412: S.STOP
+    3300414: S.STOP 1
+    3300416: S.STOP 2
+    3300418: S.STOP 3
+    3300420: S.STOP 4
+    3300422: S.STOP 5
+    3300424: S.STOP 6
+    3300426: S.STOP 7
+    3300428: S.STOP#1
+    3300430: S.STOP#2
+    3300432: S.STOP#3
+    3300434: S.STOP#3 1
+    3300436: START
+    3300438: START 1
+    3300440: START 10
+    3300442: START 11
+    3300444: START 2
+    3300446: START 3
+    3300448: START 4
+    3300450: START 5
+    3300452: START 6
+    3300454: START 7
+    3300456: START 8
+    3300458: START 9
+    3300460: STOP
+    3300462: STOP 1
+    3300464: STOP 2
+    3300466: STOP 3
+    3300468: STOP 4
+    3300470: STOP 5
+    3300472: STOP 6
+    3300474: STOP 7
+    3300476: STOP#1
+    3300478: STOP#2
+    3300480: STOP#3
+    3300482: STOP#3 1
+    3300484: "\xAE#4"
+    4300000: Mesh Gruppe#1
+    4300002: Mesh RD-3D_dark
+    4300004: Mesh RD-3D_glas
+    4300006: Mesh RD-3D_grey
+    4300008: Mesh RD-3D_me01
+    4300010: Mesh RD-3D_meta
+    4300012: 'Mesh #1'
+    4300014: Mesh START
+    4300016: Mesh STOP
+    4300018: Mesh S.STOP
+    4300020: Mesh RD-3D_blac
+    4300022: Mesh RD-3D_butt
+    4300024: Mesh RD-3D_dark#1
+    4300026: Mesh RD-3D_feet
+    4300028: Mesh RD-3D_glas#1
+    4300030: Mesh RD-3D_gr02
+    4300032: Mesh RD-3D_grey#1
+    4300034: Mesh RD-3D_ha01
+    4300036: Mesh RD-3D_hand
+    4300038: Mesh RD-3D_me01#1
+    4300040: Mesh RD-3D_meta#1
+    4300042: Mesh RD-3D_wh01
+    4300044: Mesh RD-3D_whit
+    4300046: Mesh RSF
+    4300048: Mesh RD-3D_whit#1
+    4300050: Mesh RD-3D_blac#1
+    4300052: Mesh RD-3D_butt#1
+    4300054: Mesh RD-3D_dark#2
+    4300056: Mesh RD-3D_feet#1
+    4300058: Mesh RD-3D_glas#2
+    4300060: Mesh RD-3D_gr01
+    4300062: Mesh RD-3D_gr02#1
+    4300064: Mesh RD-3D_hand#1
+    4300066: Mesh RD-3D_me01#2
+    4300068: Mesh RD-3D_meta#2
+    4300070: Mesh RD-3D_pink
+    4300072: Mesh RD-3D_wh01#1
+    4300074: Mesh RD-3D_whit#2
+    4300076: Mesh AOB
+    4300078: Mesh STOP#1
+    4300080: Mesh S.STOP#1
+    4300082: Mesh RD-3D_blac#2
+    4300084: Mesh RD-3D_butt#2
+    4300086: Mesh RD-3D_dark#3
+    4300088: Mesh RD-3D_feet#2
+    4300090: Mesh RD-3D_glas#3
+    4300092: Mesh RD-3D_gr01#1
+    4300094: Mesh RD-3D_gr02#2
+    4300096: Mesh RD-3D_ha01#1
+    4300098: Mesh RD-3D_hand#2
+    4300100: Mesh RD-3D_me01#3
+    4300102: Mesh RD-3D_meta#3
+    4300104: Mesh RD-3D_pink#1
+    4300106: Mesh RD-3D_wh01#2
+    4300108: Mesh RD-3D_whit#3
+    4300110: Mesh OBS
+    4300112: Mesh S.STOP#2
+    4300114: Mesh STOP#2
+    4300116: "Mesh \xAE#4"
+    4300118: Mesh RD-3D_blac#3
+    4300120: Mesh RD-3D_butt#3
+    4300122: Mesh RD-3D_dark#4
+    4300124: Mesh RD-3D_feet#3
+    4300126: Mesh RD-3D_gl01
+    4300128: Mesh RD-3D_glas#4
+    4300130: Mesh RD-3D_gr01#2
+    4300132: Mesh RD-3D_gr02#3
+    4300134: Mesh RD-3D_ha01#2
+    4300136: Mesh RD-3D_hand#3
+    4300138: Mesh RD-3D_me01#4
+    4300140: Mesh RD-3D_meta#4
+    4300142: Mesh RD-3D_pink#2
+    4300144: Mesh RD-3D_wh01#3
+    4300146: Mesh RD-3D_whit#4
+    4300148: Mesh IPB
+    4300150: Mesh c#2
+    4300152: Mesh o
+    4300154: Mesh b
+    4300156: Mesh a
+    4300158: Mesh s
+    4300160: Mesh R
+    4300162: Mesh HITACHI
+    4300164: Mesh 8100
+    4300166: Mesh ACU#2
+    4300168: Mesh RD-3D_blac#4
+    4300170: Mesh RD-3D_butt#4
+    4300172: Mesh RD-3D_dark#5
+    4300174: Mesh RD-3D_feet#4
+    4300176: Mesh RD-3D_glas#5
+    4300178: Mesh RD-3D_gr01#3
+    4300180: Mesh RD-3D_gr02#4
+    4300182: Mesh RD-3D_ha01#3
+    4300184: Mesh RD-3D_hand#4
+    4300186: Mesh RD-3D_me01#5
+    4300188: Mesh RD-3D_meta#5
+    4300190: Mesh RD-3D_pink#3
+    4300192: Mesh RD-3D_wh01#4
+    4300194: Mesh RD-3D_whit#5
+    4300196: Mesh S.STOP#3
+    4300198: Mesh STOP#3
+    4300200: Mesh RD-3D_blac#5
+    4300202: Mesh RD-3D_butt#5
+    4300204: Mesh RD-3D_dark#6
+    4300206: Mesh RD-3D_feet#5
+    4300208: Mesh RD-3D_glas#6
+    4300210: Mesh RD-3D_gr02#5
+    4300212: Mesh RD-3D_grey#2
+    4300214: Mesh RD-3D_ha01#4
+    4300216: Mesh RD-3D_hand#5
+    4300218: Mesh RD-3D_me01#6
+    4300220: Mesh RD-3D_meta#6
+    4300222: Mesh RD-3D_wh01#5
+    4300224: Mesh RD-3D_whit#6
+    4300226: Mesh DSP
+    4300228: Mesh RD-3D_blac#6
+    4300230: Mesh RD-3D_butt#6
+    4300232: Mesh RD-3D_dark#7
+    4300234: Mesh RD-3D_feet#6
+    4300236: Mesh RD-3D_glas#7
+    4300238: Mesh RD-3D_gr02#6
+    4300240: Mesh RD-3D_grey#3
+    4300242: Mesh RD-3D_ha01#5
+    4300244: Mesh RD-3D_hand#6
+    4300246: Mesh RD-3D_me01#7
+    4300248: Mesh RD-3D_meta#7
+    4300250: Mesh RD-3D_wh01#6
+    4300252: Mesh RD-3D_whit#7
+    4300254: Mesh BCL
+    4300256: Mesh RD-3D_blac#7
+    4300258: Mesh RD-3D_butt#7
+    4300260: Mesh RD-3D_dark#8
+    4300262: Mesh RD-3D_feet#7
+    4300264: Mesh RD-3D_glas#8
+    4300266: Mesh RD-3D_grey#4
+    4300268: Mesh RD-3D_ha01#6
+    4300270: Mesh RD-3D_hand#7
+    4300272: Mesh RD-3D_meta#8
+    4300274: Mesh RD-3D_pink#4
+    4300276: Mesh RD-3D_wh01#7
+    4300278: Mesh RD-3D_whit#8
+    4300280: Mesh RD-3D_me01#9
+    4300282: Mesh AQM
+    4300284: Mesh RD-3D_me01#8
+    4300286: Mesh RD-3D_wh01#8
+    4300288: Mesh RD-3D_gr02#7
+    4300290: Mesh RD-3D_blac#8
+    4300292: Mesh RD-3D_butt#8
+    4300294: Mesh RD-3D_dark#9
+    4300296: Mesh RD-3D_feet#8
+    4300298: Mesh RD-3D_glas#9
+    4300300: Mesh RD-3D_gr01#4
+    4300302: Mesh RD-3D_gr02#8
+    4300304: Mesh RD-3D_ha01#7
+    4300306: Mesh RD-3D_hand#8
+    4300308: Mesh RD-3D_me01#10
+    4300310: Mesh RD-3D_meta#9
+    4300312: Mesh RD-3D_pink#5
+    4300314: Mesh RD-3D_wh01#9
+    4300316: Mesh RD-3D_whit#9
+    4300318: Mesh RFM
+    11400000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 62cf7602400515346906e15fad42c59f
+timeCreated: 1450008121
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000
+  assetHash:
+    serializedVersion: 2
+    Hash: d85fd93ba06684facbe6a915cdd7d723
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -2.6725428, y: 2.4739714, z: -3.9593809}
+      lookAt: {x: 0.8444875, y: 0.7154562, z: -0.44235036}
+      up: {x: 0.23570226, y: 0.94280905, z: 0.23570226}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: basispunkt
+    100004: connection point
+    100006: RD-3D_feet
+    100008: RD-3D_glas
+    100010: RD-3D_grey
+    100012: RD-3D_meta
+    100014: RD-3D_pink
+    100016: RD-3D_whit
+    100018: skp423E
+    400000: //RootNode
+    400002: basispunkt
+    400004: connection point
+    400006: RD-3D_feet
+    400008: RD-3D_glas
+    400010: RD-3D_grey
+    400012: RD-3D_meta
+    400014: RD-3D_pink
+    400016: RD-3D_whit
+    400018: skp423E
+    2300000: RD-3D_feet
+    2300002: RD-3D_glas
+    2300004: RD-3D_grey
+    2300006: RD-3D_meta
+    2300008: RD-3D_pink
+    2300010: RD-3D_whit
+    3300000: RD-3D_feet
+    3300002: RD-3D_glas
+    3300004: RD-3D_grey
+    3300006: RD-3D_meta
+    3300008: RD-3D_pink
+    3300010: RD-3D_whit
+    4300000: Mesh RD-3D_feet
+    4300002: Mesh RD-3D_glas
+    4300004: Mesh RD-3D_grey
+    4300006: Mesh RD-3D_meta
+    4300008: Mesh RD-3D_pink
+    4300010: Mesh RD-3D_whit
+    11400000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

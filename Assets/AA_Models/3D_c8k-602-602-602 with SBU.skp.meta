@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: c6ea18a3431d2604c876bbef4003bbc7
+timeCreated: 1450008285
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 11a6bdf87909d8d05525f91e41ea839d
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -1.471655, y: 2.9220853, z: -4.9283853}
+      lookAt: {x: 3.2425268, y: 0.5649942, z: -0.21420315}
+      up: {x: 0.23570226, y: 0.94280905, z: 0.23570226}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: basispunkt
+    100004: connection point
+    100006: RD-3D_blac
+    100008: RD-3D_butt
+    100010: RD-3D_butt#1
+    100012: RD-3D_caps
+    100014: RD-3D_caps#1
+    100016: RD-3D_caps#1 1
+    100018: RD-3D_dark
+    100020: RD-3D_dark#1
+    100022: RD-3D_dark#2
+    100024: RD-3D_dark#2 1
+    100026: RD-3D_dark#3
+    100028: RD-3D_feet
+    100030: RD-3D_feet#1
+    100032: RD-3D_feet#2
+    100034: RD-3D_feet#2 1
+    100036: RD-3D_feet#3
+    100038: RD-3D_gl01
+    100040: RD-3D_gl01#1
+    100042: RD-3D_gl01#1 1
+    100044: RD-3D_glas
+    100046: RD-3D_glas#1
+    100048: RD-3D_glas#2
+    100050: RD-3D_glas#2 1
+    100052: RD-3D_glas#3
+    100054: RD-3D_grey
+    100056: RD-3D_grey#1
+    100058: RD-3D_grey#1 1
+    100060: RD-3D_grey#2
+    100062: RD-3D_me01
+    100064: RD-3D_me01#1
+    100066: RD-3D_me01#2
+    100068: RD-3D_me01#2 1
+    100070: RD-3D_me01#3
+    100072: RD-3D_meta
+    100074: RD-3D_meta#1
+    100076: RD-3D_meta#2
+    100078: RD-3D_meta#2 1
+    100080: RD-3D_meta#3
+    100082: RD-3D_pipe
+    100084: RD-3D_pipe#1
+    100086: RD-3D_pipe#1 1
+    100088: RD-3D_wh01
+    100090: RD-3D_wh01#1
+    100092: RD-3D_wh01#1 1
+    100094: RD-3D_wh01#2
+    100096: RD-3D_wh01#3
+    100098: RD-3D_whit
+    100100: RD-3D_whit#1
+    100102: RD-3D_whit#2
+    100104: RD-3D_whit#2 1
+    100106: RD-3D_whit#3
+    100108: skp12F
+    100110: skp2A05
+    100112: skp30B9
+    100114: skp4918
+    100116: skp4918 1
+    100118: skp9B7C
+    400000: //RootNode
+    400002: basispunkt
+    400004: connection point
+    400006: RD-3D_blac
+    400008: RD-3D_butt
+    400010: RD-3D_butt#1
+    400012: RD-3D_caps
+    400014: RD-3D_caps#1
+    400016: RD-3D_caps#1 1
+    400018: RD-3D_dark
+    400020: RD-3D_dark#1
+    400022: RD-3D_dark#2
+    400024: RD-3D_dark#2 1
+    400026: RD-3D_dark#3
+    400028: RD-3D_feet
+    400030: RD-3D_feet#1
+    400032: RD-3D_feet#2
+    400034: RD-3D_feet#2 1
+    400036: RD-3D_feet#3
+    400038: RD-3D_gl01
+    400040: RD-3D_gl01#1
+    400042: RD-3D_gl01#1 1
+    400044: RD-3D_glas
+    400046: RD-3D_glas#1
+    400048: RD-3D_glas#2
+    400050: RD-3D_glas#2 1
+    400052: RD-3D_glas#3
+    400054: RD-3D_grey
+    400056: RD-3D_grey#1
+    400058: RD-3D_grey#1 1
+    400060: RD-3D_grey#2
+    400062: RD-3D_me01
+    400064: RD-3D_me01#1
+    400066: RD-3D_me01#2
+    400068: RD-3D_me01#2 1
+    400070: RD-3D_me01#3
+    400072: RD-3D_meta
+    400074: RD-3D_meta#1
+    400076: RD-3D_meta#2
+    400078: RD-3D_meta#2 1
+    400080: RD-3D_meta#3
+    400082: RD-3D_pipe
+    400084: RD-3D_pipe#1
+    400086: RD-3D_pipe#1 1
+    400088: RD-3D_wh01
+    400090: RD-3D_wh01#1
+    400092: RD-3D_wh01#1 1
+    400094: RD-3D_wh01#2
+    400096: RD-3D_wh01#3
+    400098: RD-3D_whit
+    400100: RD-3D_whit#1
+    400102: RD-3D_whit#2
+    400104: RD-3D_whit#2 1
+    400106: RD-3D_whit#3
+    400108: skp12F
+    400110: skp2A05
+    400112: skp30B9
+    400114: skp4918
+    400116: skp4918 1
+    400118: skp9B7C
+    2300000: RD-3D_blac
+    2300002: RD-3D_butt
+    2300004: RD-3D_butt#1
+    2300006: RD-3D_caps
+    2300008: RD-3D_caps#1
+    2300010: RD-3D_caps#1 1
+    2300012: RD-3D_dark
+    2300014: RD-3D_dark#1
+    2300016: RD-3D_dark#2
+    2300018: RD-3D_dark#2 1
+    2300020: RD-3D_dark#3
+    2300022: RD-3D_feet
+    2300024: RD-3D_feet#1
+    2300026: RD-3D_feet#2
+    2300028: RD-3D_feet#2 1
+    2300030: RD-3D_feet#3
+    2300032: RD-3D_gl01
+    2300034: RD-3D_gl01#1
+    2300036: RD-3D_gl01#1 1
+    2300038: RD-3D_glas
+    2300040: RD-3D_glas#1
+    2300042: RD-3D_glas#2
+    2300044: RD-3D_glas#2 1
+    2300046: RD-3D_glas#3
+    2300048: RD-3D_grey
+    2300050: RD-3D_grey#1
+    2300052: RD-3D_grey#1 1
+    2300054: RD-3D_grey#2
+    2300056: RD-3D_me01
+    2300058: RD-3D_me01#1
+    2300060: RD-3D_me01#2
+    2300062: RD-3D_me01#2 1
+    2300064: RD-3D_me01#3
+    2300066: RD-3D_meta
+    2300068: RD-3D_meta#1
+    2300070: RD-3D_meta#2
+    2300072: RD-3D_meta#2 1
+    2300074: RD-3D_meta#3
+    2300076: RD-3D_pipe
+    2300078: RD-3D_pipe#1
+    2300080: RD-3D_pipe#1 1
+    2300082: RD-3D_wh01
+    2300084: RD-3D_wh01#1
+    2300086: RD-3D_wh01#1 1
+    2300088: RD-3D_wh01#2
+    2300090: RD-3D_wh01#3
+    2300092: RD-3D_whit
+    2300094: RD-3D_whit#1
+    2300096: RD-3D_whit#2
+    2300098: RD-3D_whit#2 1
+    2300100: RD-3D_whit#3
+    2300102: skp9B7C
+    3300000: RD-3D_blac
+    3300002: RD-3D_butt
+    3300004: RD-3D_butt#1
+    3300006: RD-3D_caps
+    3300008: RD-3D_caps#1
+    3300010: RD-3D_caps#1 1
+    3300012: RD-3D_dark
+    3300014: RD-3D_dark#1
+    3300016: RD-3D_dark#2
+    3300018: RD-3D_dark#2 1
+    3300020: RD-3D_dark#3
+    3300022: RD-3D_feet
+    3300024: RD-3D_feet#1
+    3300026: RD-3D_feet#2
+    3300028: RD-3D_feet#2 1
+    3300030: RD-3D_feet#3
+    3300032: RD-3D_gl01
+    3300034: RD-3D_gl01#1
+    3300036: RD-3D_gl01#1 1
+    3300038: RD-3D_glas
+    3300040: RD-3D_glas#1
+    3300042: RD-3D_glas#2
+    3300044: RD-3D_glas#2 1
+    3300046: RD-3D_glas#3
+    3300048: RD-3D_grey
+    3300050: RD-3D_grey#1
+    3300052: RD-3D_grey#1 1
+    3300054: RD-3D_grey#2
+    3300056: RD-3D_me01
+    3300058: RD-3D_me01#1
+    3300060: RD-3D_me01#2
+    3300062: RD-3D_me01#2 1
+    3300064: RD-3D_me01#3
+    3300066: RD-3D_meta
+    3300068: RD-3D_meta#1
+    3300070: RD-3D_meta#2
+    3300072: RD-3D_meta#2 1
+    3300074: RD-3D_meta#3
+    3300076: RD-3D_pipe
+    3300078: RD-3D_pipe#1
+    3300080: RD-3D_pipe#1 1
+    3300082: RD-3D_wh01
+    3300084: RD-3D_wh01#1
+    3300086: RD-3D_wh01#1 1
+    3300088: RD-3D_wh01#2
+    3300090: RD-3D_wh01#3
+    3300092: RD-3D_whit
+    3300094: RD-3D_whit#1
+    3300096: RD-3D_whit#2
+    3300098: RD-3D_whit#2 1
+    3300100: RD-3D_whit#3
+    3300102: skp9B7C
+    4300000: Mesh RD-3D_butt
+    4300002: Mesh RD-3D_dark
+    4300004: Mesh RD-3D_feet
+    4300006: Mesh RD-3D_glas
+    4300008: Mesh RD-3D_me01
+    4300010: Mesh RD-3D_meta
+    4300012: Mesh RD-3D_whit
+    4300014: Mesh skp9B7C
+    4300016: Mesh RD-3D_caps
+    4300018: Mesh RD-3D_dark#1
+    4300020: Mesh RD-3D_feet#1
+    4300022: Mesh RD-3D_gl01
+    4300024: Mesh RD-3D_glas#1
+    4300026: Mesh RD-3D_grey
+    4300028: Mesh RD-3D_me01#1
+    4300030: Mesh RD-3D_meta#1
+    4300032: Mesh RD-3D_pipe
+    4300034: Mesh RD-3D_wh01
+    4300036: Mesh RD-3D_whit#1
+    4300038: Mesh RD-3D_caps#1
+    4300040: Mesh RD-3D_dark#2
+    4300042: Mesh RD-3D_feet#2
+    4300044: Mesh RD-3D_gl01#1
+    4300046: Mesh RD-3D_glas#2
+    4300048: Mesh RD-3D_grey#1
+    4300050: Mesh RD-3D_me01#2
+    4300052: Mesh RD-3D_meta#2
+    4300054: Mesh RD-3D_pipe#1
+    4300056: Mesh RD-3D_wh01#1
+    4300058: Mesh RD-3D_whit#2
+    4300060: Mesh RD-3D_blac
+    4300062: Mesh RD-3D_butt#1
+    4300064: Mesh RD-3D_dark#3
+    4300066: Mesh RD-3D_feet#3
+    4300068: Mesh RD-3D_glas#3
+    4300070: Mesh RD-3D_grey#2
+    4300072: Mesh RD-3D_me01#3
+    4300074: Mesh RD-3D_meta#3
+    4300076: Mesh RD-3D_wh01#3
+    4300078: Mesh RD-3D_whit#3
+    4300080: Mesh RD-3D_wh01#2
+    11400000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

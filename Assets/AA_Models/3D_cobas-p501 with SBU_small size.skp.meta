@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: d5d9997ba1378944bbcc46fa991fd424
+timeCreated: 1450001400
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000013000000140000001500000016000000170000001800000019000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 0f8c2d261fceb9ef327ebf115923da68
+  longitude: 13.417
+  latitude: 52.533
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -2.844493, y: 3.9100156, z: -5.9463825}
+      lookAt: {x: 2.6670628, y: 1.1542376, z: -0.43482715}
+      up: {x: 0.23570226, y: 0.94280905, z: 0.23570226}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: base point
+    100004: basispunkt
+    100006: Image 1
+    100008: RD-3D_butt
+    100010: RD-3D_dark
+    100012: RD-3D_feet
+    100014: RD-3D_glas
+    100016: RD-3D_glas#1
+    100018: RD-3D_me01
+    100020: RD-3D_meta
+    100022: RD-3D_meta#1
+    100024: RD-3D_whit
+    100026: RD-3D_whit#1
+    100028: skp117
+    100030: skpAB
+    400000: //RootNode
+    400002: base point
+    400004: basispunkt
+    400006: Image 1
+    400008: RD-3D_butt
+    400010: RD-3D_dark
+    400012: RD-3D_feet
+    400014: RD-3D_glas
+    400016: RD-3D_glas#1
+    400018: RD-3D_me01
+    400020: RD-3D_meta
+    400022: RD-3D_meta#1
+    400024: RD-3D_whit
+    400026: RD-3D_whit#1
+    400028: skp117
+    400030: skpAB
+    2300000: Image 1
+    2300002: RD-3D_butt
+    2300004: RD-3D_dark
+    2300006: RD-3D_feet
+    2300008: RD-3D_glas
+    2300010: RD-3D_glas#1
+    2300012: RD-3D_me01
+    2300014: RD-3D_meta
+    2300016: RD-3D_meta#1
+    2300018: RD-3D_whit
+    2300020: RD-3D_whit#1
+    3300000: Image 1
+    3300002: RD-3D_butt
+    3300004: RD-3D_dark
+    3300006: RD-3D_feet
+    3300008: RD-3D_glas
+    3300010: RD-3D_glas#1
+    3300012: RD-3D_me01
+    3300014: RD-3D_meta
+    3300016: RD-3D_meta#1
+    3300018: RD-3D_whit
+    3300020: RD-3D_whit#1
+    4300000: Mesh 3D_cobas-p501 with SBU_small size
+    4300002: Mesh RD-3D_dark
+    4300004: Mesh RD-3D_feet
+    4300006: Mesh RD-3D_glas
+    4300008: Mesh RD-3D_me01
+    4300010: Mesh RD-3D_meta
+    4300012: Mesh RD-3D_whit
+    4300014: Mesh RD-3D_butt
+    4300016: Mesh RD-3D_glas#1
+    4300018: Mesh RD-3D_meta#1
+    4300020: Mesh RD-3D_whit#1
+    11400000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
