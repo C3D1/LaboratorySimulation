@@ -117,11 +117,10 @@ public class LampeEinschalten : MonoBehaviour {
                                     bool setActive = execute.ActionVisibility(avatarBerechtigungen);
                                     
 									if (setActive == true) {
-										execute.AktionenFarbeEinstellen();
 										item.SetActive(true);
 									}
 								}
-								execute.MenuOffen();
+								execute.SetColorToDefaultWhenOpeningMenu();
 								counter = counter + 1;
 							}
 						}

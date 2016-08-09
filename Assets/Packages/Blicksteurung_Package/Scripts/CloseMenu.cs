@@ -102,15 +102,4 @@ public class CloseMenu : MonoBehaviour {
             }
         }
     }
-
-    /// <summary>
-    /// Will be called when the avatar opens the menu.
-    /// Should that be the first time of Execution of the script, the variable 'colorInactive' will change.
-    /// </summary>
-    public void MenuOffen() {
-		Renderer rend = GetComponent<Renderer>();
-		if (colorInactive != null) {
-			rend.material.color = colorInactive;
-		}
-	}
 }
