@@ -21,23 +21,23 @@ public class HandlingZoneSwitch : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		if (Input.GetKeyDown(KeyCode.Keypad1)) {
+		if (Input.GetKeyDown(KeyCode.Alpha1)) {
             SetHZ_Operation();
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad2)) {
+        if (Input.GetKeyDown(KeyCode.Alpha2)) {
             SetHZ_Service();
         }
 
-		if (Input.GetKeyDown(KeyCode.Keypad3)) {
+		if (Input.GetKeyDown(KeyCode.Alpha3)) {
             SetHZ_Installation();
         }
 
-		if (Input.GetKeyDown(KeyCode.Keypad9)) {
+		if (Input.GetKeyDown(KeyCode.Alpha9)) {
             SetHZ_Question();
         }
 
-		if (Input.GetKeyDown(KeyCode.Keypad0)) {
+		if (Input.GetKeyDown(KeyCode.Alpha0)) {
             SetHZ_Off();
 		}
 	}

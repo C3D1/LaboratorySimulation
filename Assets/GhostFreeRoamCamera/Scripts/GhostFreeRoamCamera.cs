@@ -37,12 +37,12 @@ public class GhostFreeRoamCamera : MonoBehaviour {
 	private void Update() {
 		Camera lCamera;
 
-		if (Input.GetKeyDown(KeyCode.Keypad4)) {
+		if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			cameraActive = true;
 			lCamera = GetComponent<Camera>();
 			lCamera.enabled = true;
 		}
-		if (Input.GetKeyDown(KeyCode.Keypad5)) {
+		if (Input.GetKeyDown(KeyCode.Alpha5)) {
 			cameraActive = false;
 			lCamera = GetComponent<Camera>();
 			lCamera.enabled = false;

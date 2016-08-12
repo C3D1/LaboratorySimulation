@@ -20,8 +20,8 @@ public class Ausfuehren : MonoBehaviour
     private float time;
     private Color colorInactive;
     private bool isExecuting = false;
-    private bool disabledSchalten = false;
-    private Image loadingCircle; // Für die Animation während des Anzeigeprozesses    
+    private bool setDisabled = false;
+    private Image loadingCircle; // For the animation in the collider progress.
 
     // Public attributes
     public Material individualColorForTheSecondLamp;
@@ -50,30 +50,12 @@ public class Ausfuehren : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool aktionWirdAusgeführt = ÜberprüfenAktionimGange();
-        // Dazu da, damit ständig abgefragt wird, ob die Aktion jetzt ausgeführt wird oder nicht.
-        // Das Ganze, weil es möglich ist, dass eine Aktion fertig ausgeführt wurde während man das Menu offen hat.
-        if (!aktionWirdAusgeführt)
-        {
-            if (time == 0f && colorInactive != null)
-            {
-                Renderer renderer = GetComponent<Renderer>();
-                renderer.material.color = colorInactive;
-            }
-        }
-        else
-        {
-            if (time == 0f && colorInactive != null)
-            {
-                Renderer renderer = GetComponent<Renderer>();
-                renderer.material.color = Color.gray;
-            }
-        }
+
     }
 
     /// <summary>
-    /// Setzt die Zeit auf Null.
-    /// Dient dazu das eine Aktion nur ausgeführt werden kann, wenn sie nicht bereits ausgeführt wird.
+    /// Check that an action can only be executed, if she isnt already in progress.
+    /// Also reset the time.
     /// </summary>
     /// <param name="col"></param>
     void OnTriggerEnter(Collider col)
@@ -85,8 +67,6 @@ public class Ausfuehren : MonoBehaviour
 
             Renderer renderer = GetComponent<Renderer>();
 
-            // Enstpricht die Farbe der Aktion nicht grau, wird bereitsausgeführt auf 'false' gesetzt, sonst auf 'true'.
-            // Da ein Aktion nur grau ist, wenn sie bereits ausgeführt wird, hat dies auf alle anderen Aktionen keinen Einfluss.
             if (renderer.material.color != Color.gray)
             {
                 isExecuting = false;
@@ -95,14 +75,14 @@ public class Ausfuehren : MonoBehaviour
             {
                 isExecuting = true;
             }
-            // Setzt den Kreisfüllstand der Animation auf null zurück.
+            // Set the fillamount of 'loadingCircle' to zero.
             loadingCircle.fillAmount = 0f;
         }
     }
 
 
     /// <summary>
-    /// Wechselt die Farbe des Würfels, sobald der Kontakt der beiden Collider mehr als eine Sekunde bestehen bleibt.
+    /// If the collider is triggered for over a second, change the cube its color.
     /// </summary>
     /// <param name="col"></param>
     void OnTriggerStay(Collider col)
@@ -111,19 +91,19 @@ public class Ausfuehren : MonoBehaviour
         if (col == GameObject.FindGameObjectWithTag("Gaze").GetComponent<Collider>())
         {
 
-            // Sobald es der erste Durchlauf ist, der über einer Sekunde ist.
+            // When its the first pass
             if (isExecuting != true)
             {
                 time += Time.deltaTime;
                 loadingCircle.fillAmount += Time.deltaTime * (1 / openingDelay);
                 Renderer rend = GetComponent<Renderer>();
                 rend.material.color = Color.red;
-                // Sobald mehr als eine Sekunde verstrichen ist.
+                
                 if (time > openingDelay)
                 {
                     loadingCircle.fillAmount = 0f;
 
-                    disabledSchalten = true;
+                    setDisabled = true;
 
                     time = 0;
 
@@ -138,7 +118,7 @@ public class Ausfuehren : MonoBehaviour
                     {
                         if (individualColorForTheSecondLamp != null)
                         {
-                            Färben(); // Jeweilige Aktion die man ausführen will.
+                            Coloring();
                         }
                     }
                 }
@@ -149,7 +129,7 @@ public class Ausfuehren : MonoBehaviour
     /// <summary>
     /// Change the Color back to 'colorInactive'.
     /// Set the values back to the standards.
-    /// </summary>manu
+    /// </summary>
     /// <param name="col"></param>
     void OnTriggerExit(Collider col)
     {
@@ -164,18 +144,17 @@ public class Ausfuehren : MonoBehaviour
     }
 
     /*
-        Die Methode Färben ist die Aktion an sich. Daher wäre sie auch bei jeder Aktion eine andere Methode.
-        Bei diesem Beispiel bewirken aber alle Aktionen mehr oder weniger das gleiche.
+        Coloring is only an example action. Normaly, this action should be in a script for its own.
     */
     /// <summary>
-    /// Färbt die 2.Lampe in die entsprechende Farbe die dem Menupunkt mitgegeben wurde.
+    /// Set the color of the second lamp to the color, which the action has got.
     /// </summary>
-    private void Färben()
+    private void Coloring()
     {
-        Color lampenfarbe = individualColorForTheSecondLamp.color;
-        GameObject zuFärbendeLampe = GameObject.FindGameObjectWithTag("Licht2");
-        Renderer rendLampe = zuFärbendeLampe.GetComponent<Renderer>();
-        rendLampe.material.color = lampenfarbe;
+        Color lampColor = individualColorForTheSecondLamp.color;
+        GameObject lampToColor = GameObject.FindGameObjectWithTag("Licht2");
+        Renderer rendLampe = lampToColor.GetComponent<Renderer>();
+        rendLampe.material.color = lampColor;
 
         isExecuting = true;
     }
@@ -189,27 +168,25 @@ public class Ausfuehren : MonoBehaviour
         if (isExecuting == false && colorInactive != null)
         {
             Renderer rend = GetComponent<Renderer>();
-            if (disabledSchalten == false)
+            if (setDisabled == false)
             {
                 rend.material.color = colorInactive;
             }
             else
             {
-                disabledSchalten = false;
+                setDisabled = false;
             }
         }
     }
 
     /// <summary>
-    /// Bestimmt, ob ein bestimmtes Item sichtbar ist oder nicht.
+    ///  Define, if the action should be visible for this user or not.(permission granted or not)
     /// </summary>
-    /// <param name="avatarwert"></param>
-    /// <param name="benötigteWerte"></param>
+    /// <param name="avatarvalues"></param>
     /// <returns></returns>
-    public bool ActionVisibility(List<int> avatarwerte)
+    public bool ActionVisibility(List<int> avatarvalues)
     {
-        // Überprüft irgendein Wert in der Liste der Avatarwerte irgendeinem Wert in der Liste der Freigegebenen entspricht.
-        foreach (int x in avatarwerte)
+        foreach (int x in avatarvalues)
         {
             foreach (int y in freigabeBerechtigteStufen)
             {
@@ -223,57 +200,21 @@ public class Ausfuehren : MonoBehaviour
     }
 
     /// <summary>
-    /// Stellt die Aktion bei jedem Öffnen des Menus, ausser beim ersten Öffnen, auf die Grundfarbe zurück.
-    /// Mit Ausnahe der Aktion die gerade Ausgeführt wurde.
+    /// Set the color of each menupoint to the default value with each time it will be openend, except the first time.
     /// </summary>
-    public void AktionenFarbeEinstellen()
+    public void SetActionColor()
     {
         if (individualColorForTheSecondLamp != null && colorInactive != null)
         {
-            if (disabledSchalten == false)
+            if (setDisabled == false)
             {
                 Renderer rend = GetComponent<Renderer>();
                 rend.material.color = colorInactive;
             }
             else
             {
-                disabledSchalten = false;
+                setDisabled = false;
             }
-        }
-    }
-
-
-    /* 
-        Die Methode ÜberprüfenAktionimGange sollte eigentlich in einem eingenen File(Script) platziert werden, da sie je nach Methode anders ist.
-        Da das Ganze hier aber etwas anders ist, kann man es gleich im gleichen einheitlichen Script machen.
-    */
-
-    /// <summary>
-    /// Überprüft ob die Aktion gerade ausgeführt wird.
-    /// Falls dies zutrifft, wird 'true' zurückgegeben, sonst 'false'.
-    /// </summary>
-    /// <returns></returns>
-    public bool ÜberprüfenAktionimGange()
-    {
-        // Normalerweise irgendein Status oder so übeprüfen.
-        // In unserem Fall ist es die Farbe der 2.Lampe.
-        GameObject zuFärbendeLampe = GameObject.FindGameObjectWithTag("Licht2");
-        Renderer rendLamp = zuFärbendeLampe.GetComponent<Renderer>();
-
-        if (rendLamp != null && individualColorForTheSecondLamp != null)
-        {
-            if (rendLamp.material.color == individualColorForTheSecondLamp.color)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-        else
-        {
-            return false;
         }
     }
 }

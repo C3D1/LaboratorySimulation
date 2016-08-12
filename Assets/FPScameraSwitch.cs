@@ -37,14 +37,14 @@ public class FPScameraSwitch : Bolt.EntityEventListener<IAvatarState> {
             Camera lCamera;
             Vector3 startPos;
 
-            if (Input.GetKeyDown(KeyCode.Keypad4))
+            if (Input.GetKeyDown(KeyCode.Alpha4))
             {
                 cameraActive = false;
                 lCamera = fpsCamera.GetComponent<Camera>();
                 lCamera.enabled = false;
             }
 
-            if (Input.GetKeyDown(KeyCode.Keypad5))
+            if (Input.GetKeyDown(KeyCode.Alpha5))
             {
                 cameraActive = true;
                 lCamera = fpsCamera.GetComponent<Camera>();

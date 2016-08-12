@@ -8,7 +8,7 @@ public class CloseMenu : MonoBehaviour {
 	// Private Attributes
 	private float time;
 	private Color colorInactive;
-	private bool preventReclose = true;
+	private bool preventReclose = true; // When the player first open the menu, he can't close it without leaving the Collider.
 	private Image loadingCircle; 
 
 	// Public Attributes

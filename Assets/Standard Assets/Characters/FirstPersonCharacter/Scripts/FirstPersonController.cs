@@ -132,12 +132,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Keypad4))
+            if (Input.GetKeyDown(KeyCode.Alpha4))
             {
                 IsGhostCamera = true;
             }
 
-            if (Input.GetKeyDown(KeyCode.Keypad5))
+            if (Input.GetKeyDown(KeyCode.Alpha5))
             {
                 IsGhostCamera = false;
             }
