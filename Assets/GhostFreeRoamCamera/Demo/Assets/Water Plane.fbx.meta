@@ -12,6 +12,7 @@ ModelImporter:
     4300004: pCylinder1
     4300006: waterPlaneMesh
     11100000: //RootNode
+    11400000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3
@@ -19,7 +20,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 0
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 

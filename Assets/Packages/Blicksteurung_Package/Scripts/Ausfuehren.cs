@@ -153,8 +153,8 @@ public class Ausfuehren : MonoBehaviour
     {
         Color lampColor = individualColorForTheSecondLamp.color;
         GameObject lampToColor = GameObject.FindGameObjectWithTag("Licht2");
-        Renderer rendLampe = lampToColor.GetComponent<Renderer>();
-        rendLampe.material.color = lampColor;
+        Renderer rendLamp = lampToColor.GetComponent<Renderer>();
+        rendLamp.material.color = lampColor;
 
         isExecuting = true;
     }

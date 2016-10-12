@@ -5,14 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Gaze
-  - Licht
-  - Lampe
+  - Lamp
   - Licht2
   - Lampe2
   - AktionenMenu
   - HandlingZone
-  - InputDelayLampe
-  - InputDelayMenupunkt
+  - InputDelaySensor
+  - InputDelayAction
   - MenuPunkt
   - UI Item Container
   - LoadingCircle
@@ -20,6 +19,17 @@ TagManager:
   - ErrorMessage
   - IPAdressInput
   - PortInput
+  - Action
+  - Light
+  - grabbable
+  - Vaultable
+  - hand
+  - ground
+  - Vaultable_1m
+  - PlayerTrigger
+  - Vaultable_2m
+  - Cursor
+  - Licht
   layers:
   - Default
   - TransparentFX

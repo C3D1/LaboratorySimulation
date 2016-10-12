@@ -8,7 +8,6 @@ public class Playername : Bolt.EntityEventListener<IAvatarState>
     private GUIStyle namePlate;
     private Vector3 namePlatePos;
 
-    public GameObject textMeshObject;
 
     /// <summary>
     /// Attach the value of User.username to state.Avatarname.
@@ -16,7 +15,6 @@ public class Playername : Bolt.EntityEventListener<IAvatarState>
     public override void Attached()
     {
         if (entity.isOwner)
-
         {
             state.AvatarName = User.username;
         }
@@ -28,9 +26,12 @@ public class Playername : Bolt.EntityEventListener<IAvatarState>
     /// </summary>
     void OnGUI()
     {
-        Vector3 offset = new Vector3(0, 1, 0);
-        screenpos = Camera.main.WorldToScreenPoint(transform.position + offset);
-        screenpos.y = Screen.height - screenpos.y;
-        GUI.Label(new Rect(screenpos.x - 100, screenpos.y - 20, 200, 20), "Name: " + state.AvatarName); //+ User.username
+        if (User.offlinemode == false)
+        {
+            Vector3 offset = new Vector3(0, 1, 0);
+            screenpos = Camera.main.WorldToScreenPoint(transform.position + offset);
+            screenpos.y = Screen.height - screenpos.y;
+            GUI.Label(new Rect(screenpos.x - 100, screenpos.y - 20, 200, 20), "Name: " + state.AvatarName); //+ User.username
+        }
     }
 }

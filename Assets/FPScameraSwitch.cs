@@ -10,16 +10,23 @@ public class FPScameraSwitch : Bolt.EntityEventListener<IAvatarState> {
 
 	// Use this for initialization
 	void Start () {
-		cameraActive = true;
-        if (entity.isOwner)
+        if (User.offlinemode != true)
         {
-            fpsCamera.GetComponent<Camera>().enabled = true;
+            cameraActive = true;
+            if (entity.isOwner)
+            {
+                fpsCamera.GetComponent<Camera>().enabled = true;
+            }
+            else
+            {
+                fpsCamera.GetComponent<Camera>().enabled = false;
+            }
+            Debug.Log(fpsCamera);
         }
         else
         {
-            fpsCamera.GetComponent<Camera>().enabled = false;
+            fpsCamera.GetComponent<Camera>().enabled = true;
         }
-        Debug.Log(fpsCamera);
 	}
 
 
@@ -32,7 +39,7 @@ public class FPScameraSwitch : Bolt.EntityEventListener<IAvatarState> {
 
 	// Update is called once per frame
 	void Update () {
-        if (entity.isOwner)
+        if (User.offlinemode == true)
         {
             Camera lCamera;
             Vector3 startPos;
@@ -75,6 +82,54 @@ public class FPScameraSwitch : Bolt.EntityEventListener<IAvatarState> {
             {
                 togglePressed = false;
                 Cursor.visible = false;
+            }
+        }
+        else
+        {
+            if (entity.isOwner)
+            {
+                Camera lCamera;
+                Vector3 startPos;
+
+                if (Input.GetKeyDown(KeyCode.Alpha4))
+                {
+                    cameraActive = false;
+                    lCamera = fpsCamera.GetComponent<Camera>();
+                    lCamera.enabled = false;
+                }
+
+                if (Input.GetKeyDown(KeyCode.Alpha5))
+                {
+                    cameraActive = true;
+                    lCamera = fpsCamera.GetComponent<Camera>();
+                    lCamera.enabled = true;
+                }
+
+                if (cursorToggleAllowed)
+                {
+                    if (Input.GetKey(KeyCode.Escape))
+                    {
+                        if (!togglePressed)
+                        {
+                            togglePressed = true;
+                            if (Cursor.lockState == CursorLockMode.Locked)
+                            {
+                                Cursor.lockState = CursorLockMode.None;
+                            }
+                            else
+                            {
+                                Cursor.lockState = CursorLockMode.Locked;
+                            }
+                            Cursor.visible = !Cursor.visible;
+                        }
+                    }
+                    else togglePressed = false;
+                }
+                else
+                {
+                    togglePressed = false;
+                    Cursor.visible = false;
+                }
             }
         }
     }

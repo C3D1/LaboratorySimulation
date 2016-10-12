@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Net;
+using System.Net.Sockets;
+using System;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Class to save the username for each avatar.
@@ -8,6 +12,7 @@ using UnityEngine.UI;
 public class User
 {
     static public string username;
+    static public bool offlinemode = false;
 }
 
 
@@ -29,50 +34,105 @@ public class Login : Bolt.GlobalEventListener
     }
 
     /// <summary>
-    /// When you press the button to enter the scene, this methode will be called.
-    /// This methode check the validation of the form and connect the client to the right server.
+    /// If you're a server, it will automatically start the "Station_T_Current" scene.
+    /// If you're a server, it will connect you to the server you defined by yourself.
     /// </summary>
     public void EnterTheScene()
     {
-        if (usernameInput != null && errorMessage != null)
+       
+        User.username = usernameInput.text;
+        if (BoltNetwork.isServer)
+            BoltNetwork.LoadScene("Station_T_Current");
+        else
         {
-            string username = usernameInput.text;
-            if (username != "")
+            if (ipAdressInput.text != "" && portInput.text != "")
             {
-                User.username = username;
-                if (BoltNetwork.isServer)
-                    BoltNetwork.LoadScene("Station_T_Current");
-                else
+                try
                 {
-                    if (ipAdressInput.text != "" && portInput.text != "")
-                    {
-                        try
-                        {
-                            BoltNetwork.Connect(UdpKit.UdpEndPoint.Parse(string.Format("{0}:{1}", ipAdressInput.text, portInput.text)));
-                        }
-                        catch (System.Exception ex)
-                        {
-                            errorMessage = string.Format("{0}", ex);
-                        }
-                    }
-                    else
-                    {
-                        errorMessage = "No IP-Adress or Port was inserted.";
-                    }
+                    BoltNetwork.Connect(UdpKit.UdpEndPoint.Parse(string.Format("{0}:{1}", ipAdressInput.text, portInput.text)));
                 }
+                catch (System.Exception ex)
+                {
+                    errorMessage = string.Format("{0}", ex);
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Method to get te IP-adress of the host.
+    /// </summary>
+    /// <returns></returns>
+    public static string GetLocalIPAddress()
+    {
+        var host = Dns.GetHostEntry(Dns.GetHostName());
+        foreach (var ip in host.AddressList)
+        {
+            if (ip.AddressFamily == AddressFamily.InterNetwork)
+            {
+                return ip.ToString();
+            }
+        }
+        throw new Exception("Local IP Address Not Found!");
+    }
+
+    /// <summary>
+    /// Call the methode "EnterTheScene".
+    /// </summary>
+    public override void BoltStartDone()
+    {
+        if (BoltNetwork.isRunning)
+        {
+            EnterTheScene();
+        }
+    }
+
+    /// <summary>
+    /// Check if there were a username selected.
+    /// Start a server on your local-IP.
+    /// </summary>
+    public void StartServer()
+    {
+        if (usernameInput.text != "")
+        {
+            BoltLauncher.StartServer(UdpKit.UdpEndPoint.Parse(GetLocalIPAddress() + ":27000"));
+        }
+        else
+        {
+            GameObject.FindGameObjectWithTag("ErrorMessage").GetComponent<UnityEngine.UI.Text>().text = "No username selected!";
+            Debug.Log("No username (Server)");
+        }
+    }
+
+    /// <summary>
+    /// If everything is filled out (username, port and ipadress),
+    /// it starts a client.
+    /// </summary>
+    public void StartClient()
+    {
+        if (usernameInput.text != "")
+        {
+            if (ipAdressInput.text != "" && portInput.text != "")
+            {
+                BoltLauncher.StartClient();
             }
             else
             {
-                errorMessage = "No username selected. Please define a username.";
+                GameObject.FindGameObjectWithTag("ErrorMessage").GetComponent<UnityEngine.UI.Text>().text = "No IP-Adress or Port was inserted.";
+                Debug.Log("No IP-Adress or Port");
             }
         }
         else
         {
-            if (errorMessage != null)
-            {
-                errorMessage = "Username InputField is missing.";
-            }
+            errorMessage = "No username selected!";
+            Debug.Log("No username (Client)");
         }
+    }
+
+    public void StartOfflineMode()
+    {
+        User.offlinemode = true;
+        SceneManager.LoadScene("Station_T_Current");
     }
 }
  
