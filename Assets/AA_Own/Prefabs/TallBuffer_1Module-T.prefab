@@ -1491,10 +1491,6 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11447932}
   Modifications:
     Modificated:
-    - Object: {fileID: 2316580}
-      ObjeckLink: -766743886
-      PropertyPath: m_LightProbeUsage
-      Mode: 0
     - Object: {fileID: 437134}
       ObjeckLink: -1388696879
       PropertyPath: m_RootOrder
