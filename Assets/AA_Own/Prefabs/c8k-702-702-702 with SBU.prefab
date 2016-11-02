@@ -5905,34 +5905,6 @@ MonoBehaviour:
       ObjeckLink: -1161682809
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 4000010944137180}
-      ObjeckLink: -1977385609
-      PropertyPath: m_LocalScale
-      Mode: 0
-    - Object: {fileID: 4000010751929032}
-      ObjeckLink: -1975951010
-      PropertyPath: m_LocalScale
-      Mode: 0
-    - Object: {fileID: 4000010311712822}
-      ObjeckLink: 416822729
-      PropertyPath: m_LocalScale
-      Mode: 0
-    - Object: {fileID: 4000012236990570}
-      ObjeckLink: -1901043558
-      PropertyPath: m_LocalScale
-      Mode: 0
-    - Object: {fileID: 4000011010143772}
-      ObjeckLink: -1499345944
-      PropertyPath: m_LocalScale
-      Mode: 0
-    - Object: {fileID: 4000013382040998}
-      ObjeckLink: -1391815818
-      PropertyPath: m_LocalScale
-      Mode: 0
-    - Object: {fileID: 4000010683776098}
-      ObjeckLink: -539034883
-      PropertyPath: m_LocalScale
-      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
