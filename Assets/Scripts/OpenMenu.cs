@@ -60,23 +60,23 @@ public class OpenMenu : MonoBehaviour {
             {
                 GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-                Vector3 playerPos = player.transform.position;
-                Vector3 playerDirection = player.transform.forward;
-                Quaternion playerRotation = player.transform.rotation;
+                Vector3 avatarPos = player.transform.position;
+                Vector3 cameraDirection = Camera.main.transform.forward;
+                Quaternion cameraRotation = Camera.main.transform.rotation;
                 float spawnDistance = 3.0f;
-                Vector3 realposition = new Vector3(playerPos.x, floatingMenu.transform.position.y, playerPos.z);
+                Vector3 realposition = new Vector3(avatarPos.x, floatingMenu.transform.position.y, avatarPos.z);
 
-                Vector3 spawnPos = realposition + playerDirection * spawnDistance;
+                Vector3 spawnPos = realposition + cameraDirection * spawnDistance;
 
                 floatingMenu.transform.position = spawnPos;
-                floatingMenu.transform.rotation = playerRotation;
+                floatingMenu.transform.rotation = cameraRotation;
 
                 foreach (GameObject item in menu)
                 {
                     TextMesh textMesh = item.GetComponent<TextMesh>();
                     if (textMesh != null)
                     {
-                        textMesh.transform.rotation = playerRotation;
+                        textMesh.transform.rotation = Camera.main.transform.rotation;
                     }
                 }
             }

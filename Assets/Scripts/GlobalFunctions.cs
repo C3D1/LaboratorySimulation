@@ -21,6 +21,7 @@ public class GlobalFunctions : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        GameObject avatar = GameObject.FindGameObjectWithTag("Player");
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             foreach (GameObject item in allLamps)
@@ -30,30 +31,42 @@ public class GlobalFunctions : MonoBehaviour {
             SwitchLampVisibility();
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad1))
+        if (Input.GetKeyDown(KeyCode.H))
         {
-
+            if (avatar != null)
+            {
+                Vector3 position = new Vector3(-3.471f, 0.903f, 5.42f);
+                avatar.transform.position = position;
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad2))
+        if (Input.GetKeyDown(KeyCode.J))
         {
-
+            if (avatar != null)
+            {
+                Vector3 position = new Vector3(-6.561f, 0.903f, 23.209f);
+                avatar.transform.position = position;
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad3))
+        if (Input.GetKeyDown(KeyCode.K))
         {
-
+            if (avatar != null)
+            {
+                Vector3 position = new Vector3(-15.81003f, 0.903f, 1.41f);
+                avatar.transform.position = position;
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad4))
+        if (Input.GetKeyDown(KeyCode.L))
         {
-
+            if (avatar != null)
+            {
+                Vector3 position = new Vector3(-3.318f, 0.903f, 22.09f);
+                avatar.transform.position = position;
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad5))
-        {
-
-        }
     }
 
     /// <summary>
