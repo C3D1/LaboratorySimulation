@@ -8,6 +8,8 @@ public class WorldCursor : MonoBehaviour
     private MeshRenderer meshRenderer;
     private float time;
     private bool justOpened = false;
+    private GameObject progressCircle;
+    private Animation animationForProgressCircle;
 
     public Image loadingCircle;
     private float sensorOpeningDelay;
@@ -17,7 +19,7 @@ public class WorldCursor : MonoBehaviour
     void Start()
     {
         meshRenderer = this.gameObject.GetComponent<MeshRenderer>();
-        time = 0f;
+        time = 0f;       
     }
 
     // Update is called once per frame
@@ -30,6 +32,14 @@ public class WorldCursor : MonoBehaviour
     /// </summary>
     void Update()
     {
+        if (progressCircle == null)
+        {
+            progressCircle = GameObject.FindGameObjectWithTag("ProgressCircle");
+            animationForProgressCircle = progressCircle.GetComponentInChildren<Animation>();
+            progressCircle.SetActive(false);
+            Debug.Log(animationForProgressCircle);
+        }
+
         Vector3 headposition = Camera.main.transform.position;
         Vector3 gazeDirection = Camera.main.transform.forward;
 
@@ -51,14 +61,14 @@ public class WorldCursor : MonoBehaviour
                     {
                         if (!hit.collider.gameObject.GetComponent<OpenMenu>().IsMenuOpen())
                         {
-                            IncreaseTimeAndFillAmount(1);
+                            IncreaseTimeAndActivateProgessCircle(1);
                             colliderHit = true;
                             ActivateRenderer(hit);
                             if (time > sensorOpeningDelay)
                             {
                                 time = 0;
                                 justOpened = true;
-                                SetFillAmountToZero();
+                                DeactivateProgressCircle();
                                 hit.collider.gameObject.SendMessage("OpenTheMenu");
                             }
                         }
@@ -67,13 +77,13 @@ public class WorldCursor : MonoBehaviour
                     {
                         if (justOpened == false)
                         {
-                            IncreaseTimeAndFillAmount(2);
+                            IncreaseTimeAndActivateProgessCircle(2);
                             colliderHit = true;
                             ActivateRenderer(hit);
                             if (time > actionExecuteDelay)
                             {
                                 time = 0;
-                                SetFillAmountToZero();
+                                DeactivateProgressCircle();
                                 hit.collider.gameObject.SendMessage("SelectActionToExecute");
                             }
                         }
@@ -84,7 +94,7 @@ public class WorldCursor : MonoBehaviour
                 {
                     meshRenderer.enabled = false;
                     time = 0;
-                    SetFillAmountToZero();
+                    DeactivateProgressCircle();
                 }
             }
             else
@@ -92,7 +102,7 @@ public class WorldCursor : MonoBehaviour
                 time = 0;
                 justOpened = false;
                 meshRenderer.enabled = false;
-                SetFillAmountToZero();
+                DeactivateProgressCircle();
             }
         }
     }
@@ -131,24 +141,18 @@ public class WorldCursor : MonoBehaviour
     /// <summary>
     /// Reset the fillAmount of 'loadingCircle' to 0.
     /// </summary>
-    private void SetFillAmountToZero()
+    private void DeactivateProgressCircle()
     {
-        loadingCircle.fillAmount = 0f;
+        progressCircle.SetActive(false);
     }
 
     /// <summary>
     /// Increases the value of 'time' and the fillAmount of 'loadingCircle'.
     /// </summary>
-    private void IncreaseTimeAndFillAmount(int number)
+    private void IncreaseTimeAndActivateProgessCircle(int number)
     {
         time += Time.deltaTime;
-        if (number == 1)
-        {
-            loadingCircle.fillAmount += Time.deltaTime * (1 / sensorOpeningDelay);
-        }
-        else
-        {
-            loadingCircle.fillAmount += Time.deltaTime * (1 / actionExecuteDelay);
-        }
+        progressCircle.SetActive(true);
+        animationForProgressCircle.Play();
     }
 }

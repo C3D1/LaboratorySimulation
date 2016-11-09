@@ -17,6 +17,7 @@ public class GlobalFunctions : MonoBehaviour {
         }
 
         allLamps = GameObject.FindGameObjectsWithTag("Lamp");
+
     }
 	
 	// Update is called once per frame

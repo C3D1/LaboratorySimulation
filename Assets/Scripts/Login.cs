@@ -12,7 +12,7 @@ using UnityEngine.SceneManagement;
 public class User
 {
     static public string username;
-    static public bool offlinemode = false;
+    static public bool offlinemode = true;
 }
 
 
@@ -41,6 +41,7 @@ public class Login : Bolt.GlobalEventListener
     {
        
         User.username = usernameInput.text;
+        User.offlinemode = false;
         if (BoltNetwork.isServer)
             BoltNetwork.LoadScene("Station_T_Current");
         else

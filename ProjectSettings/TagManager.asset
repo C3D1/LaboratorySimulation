@@ -29,7 +29,10 @@ TagManager:
   - PlayerTrigger
   - Vaultable_2m
   - Cursor
+  - Canvas
+  - Lampe
   - Licht
+  - ProgressCircle
   layers:
   - Default
   - TransparentFX
