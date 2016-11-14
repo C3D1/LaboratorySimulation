@@ -11,7 +11,6 @@ public class WorldCursor : MonoBehaviour
     private GameObject progressCircle;
     private Animation animationForProgressCircle;
 
-    public Image loadingCircle;
     private float sensorOpeningDelay;
     private float actionExecuteDelay;
 
@@ -61,7 +60,7 @@ public class WorldCursor : MonoBehaviour
                     {
                         if (!hit.collider.gameObject.GetComponent<OpenMenu>().IsMenuOpen())
                         {
-                            IncreaseTimeAndActivateProgessCircle(1);
+                            IncreaseTimeAndActivateProgessCircle();
                             colliderHit = true;
                             ActivateRenderer(hit);
                             if (time > sensorOpeningDelay)
@@ -77,7 +76,7 @@ public class WorldCursor : MonoBehaviour
                     {
                         if (justOpened == false)
                         {
-                            IncreaseTimeAndActivateProgessCircle(2);
+                            IncreaseTimeAndActivateProgessCircle();
                             colliderHit = true;
                             ActivateRenderer(hit);
                             if (time > actionExecuteDelay)
@@ -139,7 +138,7 @@ public class WorldCursor : MonoBehaviour
     }
 
     /// <summary>
-    /// Reset the fillAmount of 'loadingCircle' to 0.
+    /// Deactivate the gameobject "progressCircle"
     /// </summary>
     private void DeactivateProgressCircle()
     {
@@ -147,9 +146,9 @@ public class WorldCursor : MonoBehaviour
     }
 
     /// <summary>
-    /// Increases the value of 'time' and the fillAmount of 'loadingCircle'.
+    /// Increases the value of 'time', activates the gameobject "progresscircle" and start the progresscircle-animation.
     /// </summary>
-    private void IncreaseTimeAndActivateProgessCircle(int number)
+    private void IncreaseTimeAndActivateProgessCircle()
     {
         time += Time.deltaTime;
         progressCircle.SetActive(true);
