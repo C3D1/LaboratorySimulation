@@ -8,11 +8,11 @@ public class WorldCursor : MonoBehaviour
     private MeshRenderer meshRenderer;
     private float time;
     private bool justOpened = false;
-    private GameObject progressCircle;
-    private Animation animationForProgressCircle;
-
-    private float sensorOpeningDelay;
-    private float actionExecuteDelay;
+    private GameObject progressCircle; // the progesscirlce, which appears when you're starring on a sensor or action.
+    private Animation animationForProgressCircle; // the animation for the progresscircle.
+    private GameObject currentAction;
+    private float sensorOpeningDelay; // default value is 1 sec.
+    private float actionExecuteDelay; // default value is 1 sec.
 
     // Use this for initialization
     void Start()
@@ -48,7 +48,7 @@ public class WorldCursor : MonoBehaviour
         {
             RaycastHit[] hits;
             bool colliderHit = false;
-            hits = Physics.RaycastAll(headposition, gazeDirection, 5f);
+            hits = Physics.RaycastAll(headposition, gazeDirection, 5f); // Every collision in the direction the avatar looks with a distance of 5.
 
             if (hits.Length > 0)
             {
@@ -72,8 +72,10 @@ public class WorldCursor : MonoBehaviour
                             }
                         }
                     }
-                    else if (hit.collider.gameObject.tag == "Action")
+                    // If the collider is an action and not current one, which just was executed.
+                    else if (hit.collider.gameObject.tag == "Action" & hit.collider.gameObject != currentAction)
                     {
+                        // If you just opened the menu, you need to look away from it first.
                         if (justOpened == false)
                         {
                             IncreaseTimeAndActivateProgessCircle();
@@ -83,6 +85,7 @@ public class WorldCursor : MonoBehaviour
                             {
                                 time = 0;
                                 DeactivateProgressCircle();
+                                currentAction = hit.collider.gameObject;
                                 hit.collider.gameObject.SendMessage("SelectActionToExecute");
                             }
                         }

@@ -31,7 +31,7 @@ public class Playername : Bolt.EntityEventListener<IAvatarState>
             Vector3 offset = new Vector3(0, 1, 0);
             screenpos = Camera.main.WorldToScreenPoint(transform.position + offset);
             screenpos.y = Screen.height - screenpos.y;
-            GUI.Label(new Rect(screenpos.x - 100, screenpos.y - 20, 200, 20), "Name: " + state.AvatarName); //+ User.username
+            GUI.Label(new Rect(screenpos.x - 100, screenpos.y - 20, 200, 20), "Name: " + state.AvatarName);
         }
     }
 }

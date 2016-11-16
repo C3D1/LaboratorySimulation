@@ -12,6 +12,7 @@ public class GlobalFunctions : MonoBehaviour {
 	void Start () {
         if (User.offlinemode == true)
         {
+            // Creating the avatar in the scene.
             GameObject avatarPrefab = Resources.Load("FPSController", typeof(GameObject)) as GameObject;
             Instantiate(avatarPrefab);
         }
@@ -23,6 +24,8 @@ public class GlobalFunctions : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         GameObject avatar = GameObject.FindGameObjectWithTag("Player");
+
+        // Places the avatar to a position in the scene.
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             foreach (GameObject item in allLamps)

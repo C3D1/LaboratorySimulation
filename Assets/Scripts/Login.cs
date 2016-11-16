@@ -61,7 +61,7 @@ public class Login : Bolt.GlobalEventListener
     }
 
     /// <summary>
-    /// Method to get te IP-adress of the host.
+    /// Method to gets your IP-adress.
     /// </summary>
     /// <returns></returns>
     public static string GetLocalIPAddress()
@@ -78,7 +78,7 @@ public class Login : Bolt.GlobalEventListener
     }
 
     /// <summary>
-    /// Call the methode "EnterTheScene".
+    /// Call the method "EnterTheScene" if the network is running.
     /// </summary>
     public override void BoltStartDone()
     {
@@ -130,6 +130,10 @@ public class Login : Bolt.GlobalEventListener
         }
     }
 
+    /// <summary>
+    /// This method starts the offlinemode.
+    /// You don't to connect to any network and you're on your own in the scene.
+    /// </summary>
     public void StartOfflineMode()
     {
         User.offlinemode = true;

@@ -33,6 +33,7 @@ public class OpenMenu : MonoBehaviour {
             GameObject[] lights = GameObject.FindGameObjectsWithTag("Light");
             if (lights != null)
             {
+                // Closes all the menus from each lamp.
                 foreach (GameObject item in lights)
                 {
                     OpenMenu openMenuScript = item.GetComponent<OpenMenu>();
@@ -43,6 +44,7 @@ public class OpenMenu : MonoBehaviour {
                 }
             }
 
+            // Opens the menu from the selected lamp.
             floatingMenu.SetActive(true);
 
             menuOpen = true;
@@ -62,7 +64,7 @@ public class OpenMenu : MonoBehaviour {
 
                 Vector3 avatarPos = player.transform.position;
                 Vector3 cameraDirection = Camera.main.transform.forward;
-                Quaternion cameraRotation = Camera.main.transform.rotation;
+                Quaternion cameraRotation = new Quaternion(0, Camera.main.transform.rotation.y, 0, Camera.main.transform.rotation.w);
                 float spawnDistance = 3.0f;
                 Vector3 realposition = new Vector3(avatarPos.x, floatingMenu.transform.position.y, avatarPos.z);
 
@@ -71,6 +73,7 @@ public class OpenMenu : MonoBehaviour {
                 floatingMenu.transform.position = spawnPos;
                 floatingMenu.transform.rotation = cameraRotation;
 
+                // Set the rotation of the text equal to the rotation of the maincamera. 
                 foreach (GameObject item in menu)
                 {
                     TextMesh textMesh = item.GetComponent<TextMesh>();

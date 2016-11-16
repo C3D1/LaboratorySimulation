@@ -83,6 +83,9 @@ public class ExecuteAction : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Turn the installation-handlingzones on.
+    /// </summary>
     private void HZ_InstallationOnAction()
     {
         Debug.Log("HZ_InstallationOnAction wird ausgeführt");
@@ -94,6 +97,9 @@ public class ExecuteAction : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Turn Operation-handlingzones on.
+    /// </summary>
     private void HZ_OperationOnAction()
     {
         Debug.Log("HZ_InstallationOnAction wird ausgeführt");
@@ -105,6 +111,9 @@ public class ExecuteAction : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Turn the question-handlingzones on.
+    /// </summary>
     private void HZ_QuestionOnAction()
     {
         Debug.Log("HZ_QuestionOnAction wird ausgeführt");
@@ -116,6 +125,9 @@ public class ExecuteAction : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Turn the service-handlingzones on.
+    /// </summary>
     private void HZ_ServiceOnAction()
     {
         Debug.Log("HZ_ServiceOnAction wird ausgeführt");
@@ -127,6 +139,9 @@ public class ExecuteAction : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Turn all handlingszones off.
+    /// </summary>
     private void HZ_Off()
     {
         Debug.Log("HZ_Off wird ausgeführt");
