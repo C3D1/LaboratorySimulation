@@ -6,12 +6,14 @@ using System;
 public class OpenMenu : MonoBehaviour {
 
     private bool menuOpen = false;
+    private Vector3 originPositionHexMenu;
 
     public GameObject floatingMenu;
     public List<GameObject> menu;
 
 	// Use this for initialization
 	void Start () {
+        originPositionHexMenu = floatingMenu.transform.position;
         // Set the floating menu on inactive.
         floatingMenu.SetActive(false);
 	}
@@ -66,10 +68,10 @@ public class OpenMenu : MonoBehaviour {
                 Vector3 cameraDirection = Camera.main.transform.forward;
                 Quaternion cameraRotation = new Quaternion(0, Camera.main.transform.rotation.y, 0, Camera.main.transform.rotation.w);
                 float spawnDistance = 3.0f;
-                Vector3 realposition = new Vector3(avatarPos.x, floatingMenu.transform.position.y, avatarPos.z);
+                Vector3 realposition = new Vector3(avatarPos.x,originPositionHexMenu.y, avatarPos.z);
 
                 Vector3 spawnPos = realposition + cameraDirection * spawnDistance;
-
+                
                 floatingMenu.transform.position = spawnPos;
                 floatingMenu.transform.rotation = cameraRotation;
 
