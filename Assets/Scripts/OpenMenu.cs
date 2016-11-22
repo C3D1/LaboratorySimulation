@@ -67,6 +67,7 @@ public class OpenMenu : MonoBehaviour {
                 Vector3 avatarPos = player.transform.position;
                 Vector3 cameraDirection = Camera.main.transform.forward;
                 Quaternion cameraRotation = new Quaternion(0, Camera.main.transform.rotation.y, 0, Camera.main.transform.rotation.w);
+
                 float spawnDistance = 3.0f;
                 Vector3 realposition = new Vector3(avatarPos.x,originPositionHexMenu.y, avatarPos.z);
 

@@ -31,7 +31,6 @@ public class WorldCursor : MonoBehaviour
     /// </summary>
     void Update()
     {
-        Debug.Log("A1");
         if (progressCircle == null)
         {
             progressCircle = GameObject.FindGameObjectWithTag("ProgressCircle");
@@ -47,17 +46,14 @@ public class WorldCursor : MonoBehaviour
         // Only the camera of the avatar should open a menu.
         if (cameraName == "FirstPersonCharacter")
         {
-            Debug.Log("A2");
             RaycastHit[] hits;
             bool colliderHit = false;
             hits = Physics.RaycastAll(headposition, gazeDirection, 5f); // Every collision in the direction the avatar looks with a distance of 5.
 
             if (hits.Length > 0)
             {
-                Debug.Log("A3");
                 for (int i = 0; i < hits.Length; i++)
                 {
-                    Debug.Log("A4");
                     RaycastHit hit = hits[i]; // Every collider in the direction of the view within the distance of 5f.
 
                     if (hit.collider.gameObject.tag == "Light")

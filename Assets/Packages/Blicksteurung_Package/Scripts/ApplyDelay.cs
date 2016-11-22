@@ -40,7 +40,7 @@ public class ApplyDelay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Alsw");
+
     }
 
     /// <summary>
