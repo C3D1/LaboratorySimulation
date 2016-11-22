@@ -12,7 +12,7 @@ public class ApplyDelay : MonoBehaviour
     private GameObject[] listLamps;
     private InputField inputFieldSensor;
     private InputField inputFieldAction;
-    private GameObject cursor;
+    private GameObject progressCircle;
     private WorldCursor worldCursorScript;
 
 
@@ -28,8 +28,9 @@ public class ApplyDelay : MonoBehaviour
         inputFieldSensor = inputDelaySensor.GetComponent<InputField>();
         inputFieldAction = inputDelayAction.GetComponent<InputField>();
 
-        cursor = GameObject.FindGameObjectWithTag("Cursor");
-        worldCursorScript = cursor.GetComponent<WorldCursor>();
+        progressCircle = GameObject.FindGameObjectWithTag("GlobalObjects");
+        worldCursorScript = progressCircle.GetComponent<WorldCursor>();
+
 
         worldCursorScript.SetActionExecuteDelay(2f);
         worldCursorScript.SetSensorOpeningDelay(2f);
@@ -39,7 +40,7 @@ public class ApplyDelay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log("Alsw");
     }
 
     /// <summary>

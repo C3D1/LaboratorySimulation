@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class WorldCursor : MonoBehaviour
 {
 
-    private MeshRenderer meshRenderer;
+    //private MeshRenderer meshRenderer;
     private float time;
     private bool justOpened = false;
     private GameObject progressCircle; // the progesscirlce, which appears when you're starring on a sensor or action.
@@ -17,7 +17,7 @@ public class WorldCursor : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        meshRenderer = this.gameObject.GetComponent<MeshRenderer>();
+        //meshRenderer = this.gameObject.GetComponent<MeshRenderer>();
         time = 0f;       
     }
 
@@ -31,12 +31,12 @@ public class WorldCursor : MonoBehaviour
     /// </summary>
     void Update()
     {
+        Debug.Log("A1");
         if (progressCircle == null)
         {
             progressCircle = GameObject.FindGameObjectWithTag("ProgressCircle");
             animationForProgressCircle = progressCircle.GetComponentInChildren<Animation>();
             progressCircle.SetActive(false);
-            Debug.Log(animationForProgressCircle);
         }
 
         Vector3 headposition = Camera.main.transform.position;
@@ -44,17 +44,21 @@ public class WorldCursor : MonoBehaviour
 
         string cameraName = Camera.main.gameObject.name;
 
+        // Only the camera of the avatar should open a menu.
         if (cameraName == "FirstPersonCharacter")
         {
+            Debug.Log("A2");
             RaycastHit[] hits;
             bool colliderHit = false;
             hits = Physics.RaycastAll(headposition, gazeDirection, 5f); // Every collision in the direction the avatar looks with a distance of 5.
 
             if (hits.Length > 0)
             {
+                Debug.Log("A3");
                 for (int i = 0; i < hits.Length; i++)
                 {
-                    RaycastHit hit = hits[i];
+                    Debug.Log("A4");
+                    RaycastHit hit = hits[i]; // Every collider in the direction of the view within the distance of 5f.
 
                     if (hit.collider.gameObject.tag == "Light")
                     {
@@ -62,7 +66,7 @@ public class WorldCursor : MonoBehaviour
                         {
                             IncreaseTimeAndActivateProgessCircle();
                             colliderHit = true;
-                            ActivateRenderer(hit);
+                            //ActivateRenderer(hit);
                             if (time > sensorOpeningDelay)
                             {
                                 time = 0;
@@ -80,7 +84,7 @@ public class WorldCursor : MonoBehaviour
                         {
                             IncreaseTimeAndActivateProgessCircle();
                             colliderHit = true;
-                            ActivateRenderer(hit);
+                            //ActivateRenderer(hit);
                             if (time > actionExecuteDelay)
                             {
                                 time = 0;
@@ -91,10 +95,9 @@ public class WorldCursor : MonoBehaviour
                         }
                     }
                 }
-
                 if (!colliderHit)
                 {
-                    meshRenderer.enabled = false;
+                    //meshRenderer.enabled = false;
                     time = 0;
                     DeactivateProgressCircle();
                 }
@@ -103,7 +106,7 @@ public class WorldCursor : MonoBehaviour
             {
                 time = 0;
                 justOpened = false;
-                meshRenderer.enabled = false;
+                //meshRenderer.enabled = false;
                 DeactivateProgressCircle();
             }
         }
@@ -132,13 +135,13 @@ public class WorldCursor : MonoBehaviour
     /// where the Raycast hit the object.
     /// </summary>
     /// <param name="hit"></param>
-    private void ActivateRenderer(RaycastHit hit)
-    {
-        meshRenderer.enabled = true;
+    //private void ActivateRenderer(RaycastHit hit)
+    //{
+    //    //meshRenderer.enabled = true;
 
-        this.transform.position = hit.point;
-        this.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
-    }
+    //    this.transform.position = hit.point;
+    //    this.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+    //}
 
     /// <summary>
     /// Deactivate the gameobject "progressCircle"

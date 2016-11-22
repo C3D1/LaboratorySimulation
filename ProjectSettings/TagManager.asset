@@ -33,6 +33,7 @@ TagManager:
   - Lampe
   - Licht
   - ProgressCircle
+  - GlobalObjects
   layers:
   - Default
   - TransparentFX
