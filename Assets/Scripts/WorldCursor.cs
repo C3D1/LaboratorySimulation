@@ -73,7 +73,7 @@ public class WorldCursor : MonoBehaviour
                         }
                     }
                     // If the collider is an action and not current one, which just was executed.
-                    else if (hit.collider.gameObject.tag == "Action" & hit.collider.gameObject != currentAction)
+                    else if ((hit.collider.gameObject.tag == "Action" | hit.collider.gameObject.tag == "ActionClose") & hit.collider.gameObject != currentAction)
                     {
                         // If you just opened the menu, you need to look away from it first.
                         if (justOpened == false)
@@ -85,7 +85,16 @@ public class WorldCursor : MonoBehaviour
                             {
                                 time = 0;
                                 DeactivateProgressCircle();
-                                currentAction = hit.collider.gameObject;
+
+                                if (hit.collider.gameObject.tag == "ActionClose")
+                                {
+                                    currentAction = null;
+                                }
+                                else
+                                {
+                                    currentAction = hit.collider.gameObject;
+                                }
+
                                 hit.collider.gameObject.SendMessage("SelectActionToExecute");
                             }
                         }

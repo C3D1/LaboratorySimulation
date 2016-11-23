@@ -326,7 +326,7 @@ GameObject:
   - 114: {fileID: 11419550}
   m_Layer: 8
   m_Name: HexagonClose
-  m_TagString: Action
+  m_TagString: ActionClose
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

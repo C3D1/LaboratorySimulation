@@ -1495,98 +1495,6 @@ MonoBehaviour:
       ObjeckLink: -1908262081
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 2378710}
-      ObjeckLink: 1784372217
-      PropertyPath: m_LightmapIndex
-      Mode: 0
-    - Object: {fileID: 2378710}
-      ObjeckLink: 1784372217
-      PropertyPath: m_LightmapIndexDynamic
-      Mode: 0
-    - Object: {fileID: 2378710}
-      ObjeckLink: 1784372217
-      PropertyPath: m_LightmapTilingOffset.x
-      Mode: 0
-    - Object: {fileID: 2378710}
-      ObjeckLink: 1784372217
-      PropertyPath: m_LightmapTilingOffset.y
-      Mode: 0
-    - Object: {fileID: 2378710}
-      ObjeckLink: 1784372217
-      PropertyPath: m_LightmapTilingOffset.z
-      Mode: 0
-    - Object: {fileID: 2378710}
-      ObjeckLink: 1784372217
-      PropertyPath: m_LightmapTilingOffset.w
-      Mode: 0
-    - Object: {fileID: 2378710}
-      ObjeckLink: 1784372217
-      PropertyPath: m_LightmapTilingOffsetDynamic.x
-      Mode: 0
-    - Object: {fileID: 2378710}
-      ObjeckLink: 1784372217
-      PropertyPath: m_LightmapTilingOffsetDynamic.y
-      Mode: 0
-    - Object: {fileID: 2378710}
-      ObjeckLink: 1784372217
-      PropertyPath: m_LightmapTilingOffsetDynamic.z
-      Mode: 0
-    - Object: {fileID: 2378710}
-      ObjeckLink: 1784372217
-      PropertyPath: m_LightmapTilingOffsetDynamic.w
-      Mode: 0
-    - Object: {fileID: 2378710}
-      ObjeckLink: 1784372217
-      PropertyPath: m_AdditionalVertexStreams
-      Mode: 0
-    - Object: {fileID: 2363842}
-      ObjeckLink: -1856693939
-      PropertyPath: m_LightmapIndex
-      Mode: 0
-    - Object: {fileID: 2363842}
-      ObjeckLink: -1856693939
-      PropertyPath: m_LightmapIndexDynamic
-      Mode: 0
-    - Object: {fileID: 2363842}
-      ObjeckLink: -1856693939
-      PropertyPath: m_LightmapTilingOffset.x
-      Mode: 0
-    - Object: {fileID: 2363842}
-      ObjeckLink: -1856693939
-      PropertyPath: m_LightmapTilingOffset.y
-      Mode: 0
-    - Object: {fileID: 2363842}
-      ObjeckLink: -1856693939
-      PropertyPath: m_LightmapTilingOffset.z
-      Mode: 0
-    - Object: {fileID: 2363842}
-      ObjeckLink: -1856693939
-      PropertyPath: m_LightmapTilingOffset.w
-      Mode: 0
-    - Object: {fileID: 2363842}
-      ObjeckLink: -1856693939
-      PropertyPath: m_LightmapTilingOffsetDynamic.x
-      Mode: 0
-    - Object: {fileID: 2363842}
-      ObjeckLink: -1856693939
-      PropertyPath: m_LightmapTilingOffsetDynamic.y
-      Mode: 0
-    - Object: {fileID: 2363842}
-      ObjeckLink: -1856693939
-      PropertyPath: m_LightmapTilingOffsetDynamic.z
-      Mode: 0
-    - Object: {fileID: 2363842}
-      ObjeckLink: -1856693939
-      PropertyPath: m_LightmapTilingOffsetDynamic.w
-      Mode: 0
-    - Object: {fileID: 2363842}
-      ObjeckLink: -1856693939
-      PropertyPath: m_AdditionalVertexStreams
-      Mode: 0
-    - Object: {fileID: 4000010981401034}
-      ObjeckLink: -76994682
-      PropertyPath: m_LocalPosition
-      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
@@ -2090,7 +1998,7 @@ GameObject:
   - 114: {fileID: 114000012553530868}
   m_Layer: 8
   m_Name: HexagonClose
-  m_TagString: Action
+  m_TagString: ActionClose
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

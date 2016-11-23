@@ -69,7 +69,9 @@ public class OpenMenu : MonoBehaviour {
                 Quaternion cameraRotation = new Quaternion(0, Camera.main.transform.rotation.y, 0, Camera.main.transform.rotation.w);
 
                 float spawnDistance = 3.0f;
-                Vector3 realposition = new Vector3(avatarPos.x,originPositionHexMenu.y, avatarPos.z);
+                Vector3 realposition = new Vector3(avatarPos.x, originPositionHexMenu.y, avatarPos.z);
+                Debug.Log(originPositionHexMenu.y);
+                Debug.Log(realposition);
 
                 Vector3 spawnPos = realposition + cameraDirection * spawnDistance;
                 
