@@ -86,6 +86,8 @@ public class WorldCursor : MonoBehaviour
                                 time = 0;
                                 DeactivateProgressCircle();
 
+                                // The Close-Action shouldn't be action which you've just executed,
+                                // because when you close a menu and open another you should can close it again.
                                 if (hit.collider.gameObject.tag == "ActionClose")
                                 {
                                     currentAction = null;

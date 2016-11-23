@@ -13,10 +13,16 @@ public class OpenMenu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        originPositionHexMenu = floatingMenu.transform.position;
+            originPositionHexMenu = floatingMenu.transform.position;
+
         // Set the floating menu on inactive.
         floatingMenu.SetActive(false);
 	}
+
+    void Awake()
+    {
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -59,7 +65,7 @@ public class OpenMenu : MonoBehaviour {
                 animation.Play();
             }
 
-            // Set the position of the menu and the rotation of the component "TextMesh".
+            // Set the position and rotation of the menu and aswell the rotation of the component "TextMesh".
             if (floatingMenu != null)
             {
                 GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -70,10 +76,8 @@ public class OpenMenu : MonoBehaviour {
 
                 float spawnDistance = 3.0f;
                 Vector3 realposition = new Vector3(avatarPos.x, originPositionHexMenu.y, avatarPos.z);
-                Debug.Log(originPositionHexMenu.y);
-                Debug.Log(realposition);
 
-                Vector3 spawnPos = realposition + cameraDirection * spawnDistance;
+                Vector3 spawnPos = new Vector3(realposition.x + cameraDirection.x * spawnDistance, originPositionHexMenu.y, realposition.z + cameraDirection.z * spawnDistance);
                 
                 floatingMenu.transform.position = spawnPos;
                 floatingMenu.transform.rotation = cameraRotation;
