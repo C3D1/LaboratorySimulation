@@ -113,6 +113,7 @@ public class WorldCursor : MonoBehaviour
             {
                 time = 0;
                 justOpened = false;
+                currentAction = null;
                 //meshRenderer.enabled = false;
                 DeactivateProgressCircle();
             }
