@@ -33,3 +33,6 @@ Unity settings:
    -Scenes/Station_T_Current 1
 4) Click on Build and choose the directory, where already an instance exists.For example LaboratorySimulation\Instances\Oculus_Rift.
 4.1) Build the lightning when you click on the lightning-tab next to the hierarchy and click on the button below named build.
+
+
+Date 28.11.2016
