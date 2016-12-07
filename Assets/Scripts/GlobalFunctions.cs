@@ -15,6 +15,7 @@ public class GlobalFunctions : MonoBehaviour {
             // Creating the avatar in the scene.
             GameObject avatarPrefab = Resources.Load("FPSController", typeof(GameObject)) as GameObject;
             Instantiate(avatarPrefab);
+            avatarPrefab.transform.position.Set(-50f, 0.9f, -3f);
         }
 
         allLamps = GameObject.FindGameObjectsWithTag("Lamp");
