@@ -5,8 +5,8 @@
 /[Bb]uilds/
 /Assets/AssetStoreTools*
 /Assets/AA_Own/Station_T/
-/Assets/_Scenes/Station_T_Current/
 /Assets/StationT_FreeCam/
+/Assets/_Scenes/
 /*_Data/
 /Instances/master/*_Data/
 /Instances/Oculus_Rift/*_Data/
