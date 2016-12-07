@@ -35,6 +35,7 @@ TagManager:
   - ProgressCircle
   - GlobalObjects
   - ActionClose
+  - TeleportBase
   layers:
   - Default
   - TransparentFX
