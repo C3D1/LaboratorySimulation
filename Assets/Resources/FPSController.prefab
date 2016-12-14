@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 5400000}
   - component: {fileID: 8200000}
+  - component: {fileID: 114676649692927122}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Untagged
@@ -43,7 +44,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -50, y: 0.9, z: -3}
+  m_LocalPosition: {x: -0.22578803, y: 0.853, z: 20.900108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -416,7 +417,7 @@ Transform:
   m_GameObject: {fileID: 1159416270668722}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.682358}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.007, y: 0.007, z: 0.007}
   m_Children: []
   m_Father: {fileID: 400002}
   m_RootOrder: 0
@@ -464,6 +465,77 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &114676649692927122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links:
+    - LIIF: 17475924
+      InstanceTarget: {fileID: 114676649692927122}
+    - LIIF: 1810154114
+      InstanceTarget: {fileID: 100000}
+    - LIIF: 1215924933
+      InstanceTarget: {fileID: 100002}
+    - LIIF: -1699394932
+      InstanceTarget: {fileID: 400000}
+    - LIIF: -624334654
+      InstanceTarget: {fileID: 4217389380121090}
+    - LIIF: 1248704097
+      InstanceTarget: {fileID: 14300000}
+    - LIIF: -898029808
+      InstanceTarget: {fileID: 11400000}
+    - LIIF: 1193718317
+      InstanceTarget: {fileID: 5400000}
+    - LIIF: 2081265009
+      InstanceTarget: {fileID: 8200000}
+    - LIIF: -1505177120
+      InstanceTarget: {fileID: 400002}
+    - LIIF: -1756098673
+      InstanceTarget: {fileID: 4592188253232480}
+    - LIIF: -754497479
+      InstanceTarget: {fileID: 1159416270668722}
+    - LIIF: 249062655
+      InstanceTarget: {fileID: 2000000}
+    - LIIF: 323398528
+      InstanceTarget: {fileID: 8100000}
+    - LIIF: 1794165847
+      InstanceTarget: {fileID: 1411864787507076}
+    - LIIF: 761904737
+      InstanceTarget: {fileID: 4872013247619714}
+    - LIIF: 1418530521
+      InstanceTarget: {fileID: 4176880853237942}
+    - LIIF: -1796913228
+      InstanceTarget: {fileID: 1846550002503050}
+    - LIIF: 944983271
+      InstanceTarget: {fileID: 212281298759505202}
+    - LIIF: -2130011501
+      InstanceTarget: {fileID: 1401285548234494}
+    - LIIF: 547196031
+      InstanceTarget: {fileID: 212670442079674814}
+    - LIIF: -2030351215
+      InstanceTarget: {fileID: 111936254604074284}
+    - LIIF: -201783881
+      InstanceTarget: {fileID: 212611342450398616}
+  Modifications:
+    Modificated: []
+    NonPrefabObjects: []
+    NonPrefabComponents: []
+    RemovedObjects: 
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 5e9e851c0e142814dac026a256ba2ac0
 --- !u!212 &212281298759505202
 SpriteRenderer:
   m_ObjectHideFlags: 1

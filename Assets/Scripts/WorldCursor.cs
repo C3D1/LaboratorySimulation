@@ -100,7 +100,7 @@ public class WorldCursor : MonoBehaviour
                                 hit.collider.gameObject.SendMessage("SelectActionToExecute");
                             }
                         }
-                    }
+                    } 
                 }
                 if (!colliderHit)
                 {

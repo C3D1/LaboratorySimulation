@@ -6,29 +6,17 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Zone_Service
-  m_Shader: {fileID: 4800000, guid: 85684e0152a2c43249e0c2c5431b7063, type: 3}
+  m_Name: Standard
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
     - first:
-        name: _AO
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
         name: _BumpMap
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _Cube
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -60,17 +48,11 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: fb35c1a5516b61043894fb81325f3cba, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _MetallicGlossMap
-      second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
-        name: _NormalMap
+        name: _MetallicGlossMap
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -101,8 +83,14 @@ Material:
         name: _DstBlend
       second: 0
     - first:
+        name: _GlossMapScale
+      second: 1
+    - first:
         name: _Glossiness
       second: 0.5
+    - first:
+        name: _GlossyReflections
+      second: 1
     - first:
         name: _Metallic
       second: 0
@@ -116,14 +104,11 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
-        name: _ReflAmount
-      second: 0.5
+        name: _SmoothnessTextureChannel
+      second: 0
     - first:
-        name: _RimPower
-      second: 3
-    - first:
-        name: _Shininess
-      second: 0.078125
+        name: _SpecularHighlights
+      second: 1
     - first:
         name: _SrcBlend
       second: 1
@@ -136,16 +121,7 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
+      second: {r: 0.8014706, g: 0.8014706, b: 0.8014706, a: 1}
     - first:
         name: _EmissionColor
-      second: {r: 0.45685554, g: 0.77003795, b: 0.9558824, a: 1}
-    - first:
-        name: _MainTint
-      second: {r: 1, g: 1, b: 1, a: 1}
-    - first:
-        name: _RimColor
-      second: {r: 0.25999996, g: 0.18999997, b: 0.15999997, a: 0}
-    - first:
-        name: _SpecColor
-      second: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+      second: {r: 0, g: 0, b: 0, a: 1}

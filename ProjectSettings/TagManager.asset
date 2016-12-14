@@ -36,6 +36,7 @@ TagManager:
   - GlobalObjects
   - ActionClose
   - TeleportBase
+  - InteractionCube
   layers:
   - Default
   - TransparentFX
