@@ -22,9 +22,11 @@ public class WorldCursor : MonoBehaviour
     {
         //meshRenderer = this.gameObject.GetComponent<MeshRenderer>();
         time = 0f;
-		teleportationBases = GameObject.FindGameObjectsWithTag("TeleportationBase");
-		foreach (GameObject item in teleportationBases) {
-			item.SetActive(false);
+		teleportationBases = GameObject.FindGameObjectsWithTag("TeleportBase");
+		if (teleportationBases != null) {
+			foreach (GameObject item in teleportationBases) {
+				item.SetActive(false);
+			}
 		}    
     }
 
@@ -45,18 +47,19 @@ public class WorldCursor : MonoBehaviour
             progressCircle.SetActive(false);
         }
 
-		if (Input.GetKeyDown(KeyCode.X)) {
-			User.teleportMode = !teleportMode;
-			if (teleportMode == true) {
-				teleportMode = false;
-			} else {
-				teleportMode = true;				
-			}
-			foreach (GameObject item in teleportationBases) {
-				item.SetActive(teleportMode);
+		if (teleportationBases != null) {
+			if (Input.GetKeyDown(KeyCode.X)) {
+				User.teleportMode = !teleportMode;
+				if (teleportMode == true) {
+					teleportMode = false;
+				} else {
+					teleportMode = true;
+				}
+				foreach (GameObject item in teleportationBases) {
+					item.SetActive(teleportMode);
+				}
 			}
 		}
-
 
         Vector3 headposition = Camera.main.transform.position;
         Vector3 gazeDirection = Camera.main.transform.forward;
@@ -68,7 +71,7 @@ public class WorldCursor : MonoBehaviour
         {
             RaycastHit[] hits;
             bool colliderHit = false;
-            hits = Physics.RaycastAll(headposition, gazeDirection, 5f); // Every collision in the direction the avatar looks with a distance of 5.
+            hits = Physics.RaycastAll(headposition, gazeDirection, 7f); // Every collision in the direction the avatar looks with a distance of 5.
 
             if (hits.Length > 0)
             {
@@ -121,7 +124,17 @@ public class WorldCursor : MonoBehaviour
                             }
                         }
                     } else if (hit.collider.gameObject.tag == "TeleportBase" && User.teleportMode == true) {
+						IncreaseTimeAndActivateProgessCircle();
+						colliderHit = true;
+						if (time > 1) {
+							time = 0;
+							DeactivateProgressCircle();
 
+							GameObject avatar = GameObject.FindGameObjectWithTag("Player");
+							if (avatar != null) {
+								avatar.transform.position = new Vector3(hit.collider.transform.position.x, avatar.transform.position.y, hit.collider.gameObject.transform.position.z);
+							}
+						}
 					} 
                 }
                 if (!colliderHit)
@@ -160,18 +173,6 @@ public class WorldCursor : MonoBehaviour
         actionExecuteDelay = delay;
     }
 
-    /// <summary>
-    /// Activates the MeshRenderer of the cursor and set his position to point,
-    /// where the Raycast hit the object.
-    /// </summary>
-    /// <param name="hit"></param>
-    //private void ActivateRenderer(RaycastHit hit)
-    //{
-    //    //meshRenderer.enabled = true;
-
-    //    this.transform.position = hit.point;
-    //    this.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
-    //}
 
     /// <summary>
     /// Deactivate the gameobject "progressCircle"
