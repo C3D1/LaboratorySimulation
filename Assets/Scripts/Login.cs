@@ -14,6 +14,7 @@ public class User
     static public string username;
     static public bool offlinemode = true;
 	static public bool gazeControlMode = true; // Can switch between Gaze Control and Mouse Control.
+	static public bool teleportMode = false;
 }
 
 

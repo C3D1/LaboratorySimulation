@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class WorldCursor : MonoBehaviour
 {
@@ -13,12 +14,18 @@ public class WorldCursor : MonoBehaviour
     private GameObject currentAction;
     private float sensorOpeningDelay; // default value is 1 sec.
     private float actionExecuteDelay; // default value is 1 sec.
+	private bool teleportMode = false;
+	private GameObject[] teleportationBases;
 
-    // Use this for initialization
-    void Start()
+	// Use this for initialization
+	void Start()
     {
         //meshRenderer = this.gameObject.GetComponent<MeshRenderer>();
-        time = 0f;       
+        time = 0f;
+		teleportationBases = GameObject.FindGameObjectsWithTag("TeleportationBase");
+		foreach (GameObject item in teleportationBases) {
+			item.SetActive(false);
+		}    
     }
 
     // Update is called once per frame
@@ -37,6 +44,19 @@ public class WorldCursor : MonoBehaviour
             animationForProgressCircle = progressCircle.GetComponentInChildren<Animation>();
             progressCircle.SetActive(false);
         }
+
+		if (Input.GetKeyDown(KeyCode.X)) {
+			User.teleportMode = !teleportMode;
+			if (teleportMode == true) {
+				teleportMode = false;
+			} else {
+				teleportMode = true;				
+			}
+			foreach (GameObject item in teleportationBases) {
+				item.SetActive(teleportMode);
+			}
+		}
+
 
         Vector3 headposition = Camera.main.transform.position;
         Vector3 gazeDirection = Camera.main.transform.forward;
@@ -100,7 +120,9 @@ public class WorldCursor : MonoBehaviour
                                 hit.collider.gameObject.SendMessage("SelectActionToExecute");
                             }
                         }
-                    } 
+                    } else if (hit.collider.gameObject.tag == "TeleportBase" && User.teleportMode == true) {
+
+					} 
                 }
                 if (!colliderHit)
                 {

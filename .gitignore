@@ -6,7 +6,8 @@
 /Assets/AssetStoreTools*
 /Assets/AA_Own/Station_T/
 /Assets/StationT_FreeCam/
-/Assets/_Scenes/
+/Assets/_Scenes/Lab_Current/
+/Assets/_Scenes/StationT_Current/
 /*_Data/
 /Instances/master/*_Data/
 /Instances/Oculus_Rift/*_Data/

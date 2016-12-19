@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33505739494755498}
   - component: {fileID: 136950304944850664}
   - component: {fileID: 23170013372077520}
+  - component: {fileID: 114877497345623916}
   m_Layer: 0
   m_Name: TeleportBase
   m_TagString: TeleportBase
@@ -35,9 +36,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1216146605254434}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.99, y: -0.555, z: 5.974}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.558, y: -0.055, z: 1.155}
+  m_LocalScale: {x: 1, y: 1.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -80,6 +81,43 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1216146605254434}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114877497345623916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1216146605254434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a02d0f612a241b293c0da4f82b712c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Properties:
+    Properties: []
+    Groups: []
+    Hidden: 
+  Links:
+    Links:
+    - LIIF: -1084468796
+      InstanceTarget: {fileID: 114877497345623916}
+    - LIIF: -1940554073
+      InstanceTarget: {fileID: 1216146605254434}
+    - LIIF: -629989635
+      InstanceTarget: {fileID: 4247158854526650}
+    - LIIF: 866437532
+      InstanceTarget: {fileID: 33505739494755498}
+    - LIIF: 1188893537
+      InstanceTarget: {fileID: 136950304944850664}
+    - LIIF: -491062215
+      InstanceTarget: {fileID: 23170013372077520}
+  Modifications:
+    Modificated: []
+    NonPrefabObjects: []
+    NonPrefabComponents: []
+    RemovedObjects: 
+    TransformParentChanges: []
+  ParentPrefabGUID: 
+  PrefabGUID: 0a6853a2a14d52649b127b371e32812f
 --- !u!136 &136950304944850664
 CapsuleCollider:
   m_ObjectHideFlags: 1
