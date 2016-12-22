@@ -62,8 +62,6 @@ public class GizmosController : MonoBehaviour {
 				Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
 				transform.position = curPosition;
 			}
-		} else {
-
 		}
 
 	}
