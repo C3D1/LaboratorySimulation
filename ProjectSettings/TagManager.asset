@@ -37,6 +37,8 @@ TagManager:
   - ActionClose
   - TeleportBase
   - InteractionCube
+  - PlacementZone
+  - MovementObject
   layers:
   - Default
   - TransparentFX
