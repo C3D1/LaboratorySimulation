@@ -35,6 +35,10 @@ TagManager:
   - ProgressCircle
   - GlobalObjects
   - ActionClose
+  - TeleportBase
+  - InteractionCube
+  - PlacementZone
+  - MovementObject
   layers:
   - Default
   - TransparentFX
