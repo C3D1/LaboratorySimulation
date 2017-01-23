@@ -63,7 +63,6 @@ public class GizmosController : MonoBehaviour {
 				transform.position = curPosition;
 			}
 		}
-
 	}
 
 	void FixedUpdate() {

@@ -14,8 +14,8 @@ public class GlobalFunctions : MonoBehaviour {
         {
             // Creating the avatar in the scene.
             GameObject avatarPrefab = Resources.Load("FPSController", typeof(GameObject)) as GameObject;
-            Instantiate(avatarPrefab);
-            avatarPrefab.transform.position.Set(-50f, 0.9f, -3f);
+			avatarPrefab.transform.position = new Vector3(-14.31f, 0.9f, -3.22f);
+			Instantiate(avatarPrefab);      
         }
 
         allLamps = GameObject.FindGameObjectsWithTag("Lamp");
@@ -35,43 +35,6 @@ public class GlobalFunctions : MonoBehaviour {
             }
             SwitchLampVisibility();
         }
-
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            if (avatar != null)
-            {
-                Vector3 position = new Vector3(-3.471f, 0.903f, 5.42f);
-                avatar.transform.position = position;
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            if (avatar != null)
-            {
-                Vector3 position = new Vector3(-6.561f, 0.903f, 23.209f);
-                avatar.transform.position = position;
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            if (avatar != null)
-            {
-                Vector3 position = new Vector3(-15.81003f, 0.903f, 1.41f);
-                avatar.transform.position = position;
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            if (avatar != null)
-            {
-                Vector3 position = new Vector3(-3.318f, 0.903f, 22.09f);
-                avatar.transform.position = position;
-            }
-        }
-
     }
 
     /// <summary>

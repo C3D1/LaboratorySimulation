@@ -48,7 +48,7 @@ public class WorldCursor : MonoBehaviour
         }
 
 		if (teleportationBases != null) {
-			if (Input.GetKeyDown(KeyCode.X)) {
+			if (Input.GetKeyDown(KeyCode.T)) {
 				User.teleportMode = !teleportMode;
 				if (teleportMode == true) {
 					teleportMode = false;
@@ -71,7 +71,11 @@ public class WorldCursor : MonoBehaviour
         {
             RaycastHit[] hits;
             bool colliderHit = false;
-            hits = Physics.RaycastAll(headposition, gazeDirection, 7f); // Every collision in the direction the avatar looks with a distance of 5.
+			if (teleportMode == true) {
+				hits = Physics.RaycastAll(headposition, gazeDirection, 12f); // Every collision in the direction the avatar looks with a distance of 7.
+			} else {
+				hits = Physics.RaycastAll(headposition, gazeDirection, 7f); // Every collision in the direction the avatar looks with a distance of 7.
+			}
 
             if (hits.Length > 0)
             {
