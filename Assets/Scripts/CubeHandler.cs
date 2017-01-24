@@ -6,27 +6,26 @@ public class CubeHandler : MonoBehaviour {
 
 	//private MeshRenderer meshRenderer;
 	private float time;
-	private bool justOpened = false;
 	private GameObject progressCircle; // the progesscirlce, which appears when you're starring on a sensor or action.
 	private Animation animationForProgressCircle; // the animation for the progresscircle.
 	private GameObject currentCube;
 	private GameObject cubeExecuted;
 	private bool mode = true;
 	private Color green = Color.green;
-	private Color gray = Color.gray;
+	private Color white = Color.white;
 	private Color magenta = Color.magenta;
 
 	// Use this for initialization
-	void Start () {
+	void Start() {
 		time = 0f;
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
+	void Update() {
 		if (Input.GetKeyDown(KeyCode.X)) {
 
 			User.gazeControlMode = !mode;
-			
+
 
 			if (mode == true) {
 				mode = false;
@@ -46,7 +45,7 @@ public class CubeHandler : MonoBehaviour {
 			if (Cursor.visible == false) {
 				Cursor.visible = true;
 			}
-			
+
 		} else {
 			if (Cursor.visible == true) {
 				Cursor.visible = false;
@@ -70,21 +69,17 @@ public class CubeHandler : MonoBehaviour {
 
 						// If the collider is an action and not current one, which just was executed.
 						if (hit.collider.gameObject.tag == "InteractionCube") {
-							if (currentCube != null & currentCube == hit.collider.gameObject & hit.collider.gameObject != cubeExecuted) {
-								Renderer rend = currentCube.GetComponent<Renderer>();
-								rend.material.color = magenta;
-							} else if (hit.collider.gameObject != cubeExecuted) {
-								currentCube = hit.collider.gameObject;
-								Renderer rend = currentCube.GetComponent<Renderer>();
-								rend.material.color = magenta;
-							}
-
-							// If you just opened the menu, you need to look away from it first.
-							if (justOpened == false) {
-								IncreaseTimeAndActivateProgessCircle();
-								colliderHit = true;
+							if (currentCube != hit.collider.gameObject | currentCube == null) {
+								// If you just opened the menu, you need to look away from it first.
+								CubeAction cubeScript = hit.collider.gameObject.GetComponent<CubeAction>();
+								if (cubeScript != null && cubeScript.canInteract == true && cubeScript.interactModeActivated == true) {
+									IncreaseTimeAndActivateProgessCircle();
+									colliderHit = true;
+								}
+								
 								//ActivateRenderer(hit);
 								if (time > 1) {
+									currentCube = hit.collider.gameObject;
 									time = 0;
 									DeactivateProgressCircle();
 									Renderer rend = currentCube.GetComponent<Renderer>();
@@ -92,7 +87,7 @@ public class CubeHandler : MonoBehaviour {
 
 									if (cubeExecuted != null && cubeExecuted != currentCube) {
 										Renderer renderer = cubeExecuted.GetComponent<Renderer>();
-										renderer.material.color = gray;
+										renderer.material.color = white;
 									}
 
 									cubeExecuted = hit.collider.gameObject;
@@ -110,17 +105,16 @@ public class CubeHandler : MonoBehaviour {
 						DeactivateProgressCircle();
 						if (currentCube != null & currentCube != cubeExecuted) {
 							Renderer rend = currentCube.GetComponent<Renderer>();
-							rend.material.color = gray;
+							rend.material.color = white;
 						}
 					}
 				} else {
 					time = 0;
-					justOpened = false;
 					//meshRenderer.enabled = false;
 					DeactivateProgressCircle();
 					if (currentCube != null & currentCube != cubeExecuted) {
 						Renderer rend = currentCube.GetComponent<Renderer>();
-						rend.material.color = gray;
+						rend.material.color = white;
 					}
 				}
 			}
