@@ -36,6 +36,7 @@ public class CubeAction : MonoBehaviour {
 		// EXECUTE ACTION
 	}
 
+	// The cube should turn back to it's original color.
 	void OnMouseExit() {
 		if (User.gazeControlMode == false & canInteract == true) {
 			if (interactModeActivated == false) {
@@ -46,6 +47,7 @@ public class CubeAction : MonoBehaviour {
 		}
 	}
 
+	// Turns the cube into green. You've activated the "action" with a click on the cube.
 	void OnMouseDown() {
 		if (User.gazeControlMode == false & interactModeActivated == true && canInteract == true) {
 			GetComponent<Renderer>().material.color = Color.green;

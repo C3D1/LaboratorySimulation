@@ -14,7 +14,7 @@ public class GizmosController : MonoBehaviour {
 	private Rigidbody rb;
 	private bool allowToPlace = false;
 	private bool alreadyPlaced = false;
-	private bool canNotClick = false;
+	private bool canClick = true;
 	private bool firstClick = true;
 	
 
@@ -26,6 +26,17 @@ public class GizmosController : MonoBehaviour {
 		GameObject progressCircle = GameObject.FindGameObjectWithTag("ProgressCircle");
 		if (progressCircle != null) {
 			progressCircle.SetActive(false);
+		}
+		// Deactivates all shaders on the placement zones.
+		if (placementZones != null) {
+			foreach (GameObject item in placementZones) {
+				GameObject shader = item.transform.FindChild("Shader").gameObject;
+				if (shader != null) {
+					if (shader.active == true) {
+						shader.SetActive(false);
+					}
+				}
+			}
 		}
 	}
 
@@ -54,7 +65,7 @@ public class GizmosController : MonoBehaviour {
 				}
 			}
 		}
-
+		// If the cube is clicked and isn't placed. It will drag the cube with you.
 		if (isClicked == true & alreadyPlaced != true) {
 			if (Vector3.Distance(transform.position, avatar.transform.position) < Mathf.Infinity) {
 				Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
@@ -65,6 +76,9 @@ public class GizmosController : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Scans the first object under the cube and if it's a placement zone, you're allowed to place to cube.
+	/// </summary>
 	void FixedUpdate() {
 		RaycastHit hit;
 		if (alreadyPlaced == false ) {
@@ -74,20 +88,23 @@ public class GizmosController : MonoBehaviour {
 					if (allowToPlace == false) {
 						allowToPlace = true;						
 					}
-					GetComponent<Renderer>().material.color = Color.green;
-					canNotClick = false;
+					canClick = true;
 				} else {
-					GetComponent<Renderer>().material.color = Color.gray;
 					allowToPlace = false;
-					canNotClick = true;
+					canClick = false;
 				}
 			} 
 		}
 	}
 
+	/// <summary>
+	/// You begin to drag the object with the first click on it.
+	/// If the object isn't already placed on a placement zone, you can drop it on one with a second click.
+	/// You can only drop it above green placement zones.
+	/// </summary>
 	void OnMouseDown() {
 		isClicked = true;
-		if (avatar != null & (canNotClick == false | firstClick == true)) {
+		if (avatar != null & (canClick == true | firstClick == true)) {
 			firstClick = false;
 			GetComponent<Renderer>().material.color = Color.gray;
 			if (Vector3.Distance(transform.position, avatar.transform.position) < 5) {
@@ -96,8 +113,9 @@ public class GizmosController : MonoBehaviour {
 				offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
 			}
 		}
-
+		// If the cube is already placed you shouldn't be still able to see the green overlay.
 		if (allowToPlace == true && alreadyPlaced != true) {
+			isClicked = false;
 			alreadyPlaced = true;
 		} else {
 			alreadyPlaced = false;
