@@ -45,7 +45,7 @@ public class Login : Bolt.GlobalEventListener
         User.username = usernameInput.text;
         User.offlinemode = false;
         if (BoltNetwork.isServer)
-            BoltNetwork.LoadScene("Station_T_Current");
+            BoltNetwork.LoadScene("Lab_Current");
         else
         {
             if (ipAdressInput.text != "" && portInput.text != "")
@@ -139,7 +139,7 @@ public class Login : Bolt.GlobalEventListener
     public void StartOfflineMode()
     {
         User.offlinemode = true;
-        SceneManager.LoadScene("Station_T_Current");
+        SceneManager.LoadScene("Lab_Current");
     }
 }
  
