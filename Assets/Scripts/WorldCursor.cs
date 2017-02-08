@@ -72,7 +72,7 @@ public class WorldCursor : MonoBehaviour
             RaycastHit[] hits;
             bool colliderHit = false;
 			if (teleportMode == true) {
-				hits = Physics.RaycastAll(headposition, gazeDirection, 12f); // Every collision in the direction the avatar looks with a distance of 7.
+				hits = Physics.RaycastAll(headposition, gazeDirection, 12f); // Every collision in the direction the avatar looks with a distance of 12.
 			} else {
 				hits = Physics.RaycastAll(headposition, gazeDirection, 7f); // Every collision in the direction the avatar looks with a distance of 7.
 			}

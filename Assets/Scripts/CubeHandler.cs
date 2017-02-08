@@ -26,7 +26,6 @@ public class CubeHandler : MonoBehaviour {
 
 			User.gazeControlMode = !mode;
 
-
 			if (mode == true) {
 				mode = false;
 			} else {
@@ -51,8 +50,8 @@ public class CubeHandler : MonoBehaviour {
 				Cursor.visible = false;
 			}
 
-			Vector3 headposition = Camera.main.transform.position;
-			Vector3 gazeDirection = Camera.main.transform.forward;
+			Vector3 headposition = Camera.main.transform.position; // The current position of the camera.
+			Vector3 gazeDirection = Camera.main.transform.forward; // The current direction of the camera.
 
 			string cameraName = Camera.main.gameObject.name;
 
@@ -61,23 +60,23 @@ public class CubeHandler : MonoBehaviour {
 
 				RaycastHit[] hits;
 				bool colliderHit = false;
-				hits = Physics.RaycastAll(headposition, gazeDirection, 5f); // Every collision in the direction the avatar looks with a distance of 5.
+				hits = Physics.RaycastAll(headposition, gazeDirection, 5f); // Every collision in the direction the avatar looks within 5.
 
 				if (hits.Length > 0) {
 					for (int i = 0; i < hits.Length; i++) {
 						RaycastHit hit = hits[i]; // Every collider in the direction of the view within the distance of 5f.
 
-						// If the collider is an action and not current one, which just was executed.
+						// If the collider is a cube you can interact with.
 						if (hit.collider.gameObject.tag == "InteractionCube") {
-							if (currentCube != hit.collider.gameObject | currentCube == null) {
-								// If you just opened the menu, you need to look away from it first.
+							// If it isn't the current cube
+							if (currentCube != hit.collider.gameObject | currentCube == null) { 
 								CubeAction cubeScript = hit.collider.gameObject.GetComponent<CubeAction>();
 								if (cubeScript != null && cubeScript.canInteract == true && cubeScript.interactModeActivated == true) {
 									IncreaseTimeAndActivateProgessCircle();
 									colliderHit = true;
 								}
 								
-								//ActivateRenderer(hit);
+								// The user must stay longer than 1 second on the object, to execute the action.
 								if (time > 1) {
 									currentCube = hit.collider.gameObject;
 									time = 0;
@@ -85,22 +84,22 @@ public class CubeHandler : MonoBehaviour {
 									Renderer rend = currentCube.GetComponent<Renderer>();
 									rend.material.color = green;
 
+									// The last actions which was executed (Not the current one) turns back to its original color.
 									if (cubeExecuted != null && cubeExecuted != currentCube) {
 										Renderer renderer = cubeExecuted.GetComponent<Renderer>();
-										renderer.material.color = white;
+										renderer.material.color = Color.blue;
 									}
-
+									// Now the last action which was executed, is the current one.
 									cubeExecuted = hit.collider.gameObject;
 
 									animationForProgressCircle.Stop();
 
-									hit.collider.gameObject.SendMessage("ExecuteCubeAction");
+									hit.collider.gameObject.SendMessage("ExecuteCubeAction"); // Isn't implemented. Just to show that this is the moment, where you can call the individual method to execute an action.
 								}
 							}
 						}
 					}
 					if (!colliderHit) {
-						//meshRenderer.enabled = false;
 						time = 0;
 						DeactivateProgressCircle();
 						if (currentCube != null & currentCube != cubeExecuted) {
@@ -110,7 +109,6 @@ public class CubeHandler : MonoBehaviour {
 					}
 				} else {
 					time = 0;
-					//meshRenderer.enabled = false;
 					DeactivateProgressCircle();
 					if (currentCube != null & currentCube != cubeExecuted) {
 						Renderer rend = currentCube.GetComponent<Renderer>();
@@ -123,14 +121,14 @@ public class CubeHandler : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// Deactivate the gameobject "progressCircle"
+	/// Deactivate the progresscircle.
 	/// </summary>
 	private void DeactivateProgressCircle() {
 		progressCircle.SetActive(false);
 	}
 
 	/// <summary>
-	/// Increases the value of 'time', activates the gameobject "progresscircle" and start the progresscircle-animation.
+	/// Increases the value of 'time', activates the gameobject "progresscircle" and starts the progresscircle-animation.
 	/// </summary>
 	private void IncreaseTimeAndActivateProgessCircle() {
 		time += Time.deltaTime;

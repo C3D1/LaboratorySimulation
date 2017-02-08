@@ -21,7 +21,6 @@ public class FPScameraSwitch : Bolt.EntityEventListener<IAvatarState> {
             {
                 fpsCamera.GetComponent<Camera>().enabled = false;
             }
-            Debug.Log(fpsCamera);
         }
         else
         {

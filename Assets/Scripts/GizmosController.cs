@@ -14,8 +14,8 @@ public class GizmosController : MonoBehaviour {
 	private Rigidbody rb;
 	private bool allowToPlace = false;
 	private bool alreadyPlaced = false;
-	private bool canClick = true;
-	private bool firstClick = true;
+	private bool canClick = true;	
+	private bool firstClick = true; // The first click on a object when the user starts the scene.
 	
 
 	// Use this for initialization
@@ -42,6 +42,7 @@ public class GizmosController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update() {
+		// Activates every shader, if the cube is clicked and being dragged through the scene.
 		if (isClicked == true) {
 			if (placementZones != null) {
 				foreach (GameObject item in placementZones) {
@@ -53,7 +54,7 @@ public class GizmosController : MonoBehaviour {
 					}
 				}		
 			}
-		} else {
+		} else { // If the cube is placed again, the shader are deactivated.
 			if (placementZones != null) {
 				foreach (GameObject item in placementZones) {
 					GameObject shader = item.transform.FindChild("Shader").gameObject;
@@ -82,9 +83,10 @@ public class GizmosController : MonoBehaviour {
 	void FixedUpdate() {
 		RaycastHit hit;
 		if (alreadyPlaced == false ) {
-			Ray ray = new Ray(transform.position, -transform.up);
+			Ray ray = new Ray(transform.position, -transform.up); // Get the first object with collider, which is placed below the cube.
 			if (Physics.Raycast(ray, out hit, Mathf.Infinity)) {
-				if (hit.transform.gameObject.tag == "PlacementZone") {
+				// If the object is a placement zone, the user is allowed to place the cube.
+				if (hit.transform.gameObject.tag == "PlacementZone") { 
 					if (allowToPlace == false) {
 						allowToPlace = true;						
 					}

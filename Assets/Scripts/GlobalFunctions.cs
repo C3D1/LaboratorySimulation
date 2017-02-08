@@ -14,7 +14,7 @@ public class GlobalFunctions : MonoBehaviour {
         {
             // Creating the avatar in the scene.
             GameObject avatarPrefab = Resources.Load("FPSController", typeof(GameObject)) as GameObject;
-			avatarPrefab.transform.position = new Vector3(-14.31f, 0.9f, -3.22f);
+			avatarPrefab.transform.position = new Vector3(-14.31f, 0.9f, -3.22f); // Placing the avatar at his spawn position.
 			Instantiate(avatarPrefab);      
         }
 

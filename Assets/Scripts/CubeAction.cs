@@ -19,13 +19,13 @@ public class CubeAction : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.I)) {
+			// Only if the object can interact.
 			if (canInteract == true) {
-
-				if (interactModeActivated == true) {
-					GetComponent<Renderer>().material.color = startColor;
+				if (interactModeActivated == true) { 
+					GetComponent<Renderer>().material.color = startColor; // Turn the objects back to their original color.
 					interactModeActivated = false;
-				} else {
-					GetComponent<Renderer>().material.color = Color.blue;
+				} else { 
+					GetComponent<Renderer>().material.color = Color.blue; // Turn all objects, which can interact, blue.
 					interactModeActivated = true;
 				}
 			}
@@ -49,6 +49,7 @@ public class CubeAction : MonoBehaviour {
 
 	// Turns the cube into green. You've activated the "action" with a click on the cube.
 	void OnMouseDown() {
+		// Only if the gaze control mode isn't activated, the object is allowed to interact and the interact mode is activated.
 		if (User.gazeControlMode == false & interactModeActivated == true && canInteract == true) {
 			GetComponent<Renderer>().material.color = Color.green;
 		}
